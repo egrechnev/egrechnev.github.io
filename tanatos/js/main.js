@@ -1,0 +1,65 @@
+$(document).ready(function() {
+  // To smoth scroll when putten on link
+  $('#header-section .more span').click(function() {
+    $('html, body').animate({
+      scrollTop: $('#services').offset().top
+    }, 1000);
+  });
+  $('#header-section .btns .hire-us').click(function() {
+    $('html, body').animate({
+      scrollTop: $('#our-team').offset().top
+    }, 1000);
+  });
+  $('#header-section .btns .our-works').click(function() {
+    $('html, body').animate({
+      scrollTop: $('#our-works').offset().top
+    }, 1000);
+  });
+  // button up
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > $(window).height()) {
+      $(".up").fadeIn(500)
+    } else {
+      $(".up").fadeOut(500)
+    }
+  });
+  $(".up").click(function() {
+    $("html, body").animate({
+      scrollTop: "0"
+    }, 800)
+  });
+  // show more button
+  $('.show-more').click(function() {
+    $('.hidden-more').fadeIn(1000);
+  });
+  // check reviews
+  var leftarrow = $('.arrow-left'),
+    rightarrow = $('.arrow-right');
+
+  function chickClients() {
+    if ($('.review:first').hasClass('active')) {
+      leftarrow.fadeOut();
+    } else {
+      leftarrow.fadeIn();
+    }
+    if ($('.review:last').hasClass('active')) {
+      rightarrow.fadeOut();
+    } else {
+      rightarrow.fadeIn();
+    }
+  }
+  chickClients();
+  $('#reviews span').click(function() {
+    if ($(this).hasClass('arrow-right')) {
+      $('#reviews .active').fadeOut(200, function() {
+        $(this).removeClass('active').next('.review').addClass('active').fadeIn();
+        chickClients();
+      });
+    } else {
+      $('#reviews .active').fadeOut(200, function() {
+        $(this).removeClass('active').prev('.review').addClass('active').fadeIn();
+        chickClients();
+      });
+    }
+  });
+});
