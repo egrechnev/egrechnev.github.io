@@ -5,6 +5,10 @@ html, body {
   padding: 0;
   height: 100%;
   min-height: 100%;
+}
+
+body{
+  -webkit-font-smoothing: antialiased;
   color: #3b434c;
   font-family: "Open Sans";
 }
@@ -61,6 +65,28 @@ ul {
   margin-left: 16px;
 }
 
+header nav{
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+header nav .menu-text{
+  color: #fff;
+  display: inline-block;
+  font-size: 20px
+}
+
+.menu-link{
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: -4px;
+  left: -69px;
+  display: none;
+}
+
+
 .up {
   font-family: "icons";
   width: 50px;
@@ -106,6 +132,7 @@ ul {
 
 #header-section header.flex {
   justify-content: space-between;
+  align-items: center;
 }
 
 #logo {
@@ -118,11 +145,6 @@ ul {
   margin-left: 20px;
 }
 
-#header-section nav>.menu-btn {
-  color: white;
-  font-size: 16px;
-  margin-right: 20px;
-}
 
 #header-section .text-header-block {
   text-align: center;

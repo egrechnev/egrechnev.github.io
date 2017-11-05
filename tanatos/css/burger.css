@@ -1,0 +1,55 @@
+/* the tasty burger */
+.burger-menu {
+  position: relative;
+  width: 26px;
+  height: 20px;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 16px;
+
+}
+.burger {
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  right: 0px;
+  margin-top: 0px;
+  opacity: 1;
+}
+.burger::before {
+  position: absolute;
+  background: #fff;
+  width: 26px;
+  height: 2px;
+  top: 9px;
+  content: "";
+  display: block;
+}
+.burger::after {
+  position: absolute;
+  background: #fff;
+  width: 26px;
+  height: 2px;
+  bottom: 9px;
+  content: "";
+  display: block;
+}
+.burger::after, .burger::before, .burger {
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+}
+.burger-menu.menu-on .burger::after{
+   transform: rotate(-45deg);
+   -webkit-transform: rotate(-45deg);
+  bottom: 0px;
+}
+.burger-menu.menu-on .burger::before{
+   transform: rotate(45deg);
+   -webkit-transform: rotate(45deg);
+  top: 0px;
+}
+.burger-menu.menu-on .burger, .m.menu-on .burger{
+ background: rgba(255,255,255,.0);
+}

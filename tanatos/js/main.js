@@ -1,4 +1,8 @@
 $(document).ready(function() {
+  // Burger
+  $(".burger-menu").click(function () {
+          $(this).toggleClass("menu-on");
+  });
   // To smoth scroll when putten on link
   $('#header-section .more span').click(function() {
     $('html, body').animate({
