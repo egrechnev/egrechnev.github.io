@@ -36,6 +36,15 @@ $(document).ready(function() {
   $('.show-more').click(function() {
     $('.hidden-more').fadeIn(1000);
   });
+
+  // $('.show-more').click(function(e) {
+  //     var btnLabel = $('.hidden-more')
+  //         .toggle()
+  //         .is(':visible')
+  //         ? 'HIDE' : 'SHOW MORE';
+  //     $(e.target).text(btnLabel);
+  // });
+  
   // check reviews
   var leftarrow = $('.arrow-left'),
     rightarrow = $('.arrow-right');

@@ -112,6 +112,10 @@ header nav .menu-text{
   border: 1px solid #f7600e;
 }
 
+#header-section, #services, #newsletter, #our-works, #our-team, #contacts, footer{
+  min-width: 320px;
+} 
+
 /*Секция header-section*/
 
 #header-section {
@@ -218,7 +222,7 @@ header nav .menu-text{
 #services ul {
   justify-content: space-around;
   margin: 0;
-  padding: 60px 0;
+  padding: 40px 0;
 }
 
 #services ul>li {
@@ -288,9 +292,10 @@ header nav .menu-text{
 }
 
 #newsletter .form {
-  height: 250px;
+  min-height: 250px;
   justify-content: center;
   align-items: center;
+  align-content: center;
 }
 
 #newsletter .form>[type="text"] {
@@ -345,6 +350,7 @@ header nav .menu-text{
 #our-works .row-1 {
   /*max-width: 40%;*/
   max-width: 480px;
+  margin-bottom: 80px;
 }
 
 #our-works .row-1>.title-header {
@@ -364,7 +370,7 @@ header nav .menu-text{
 
 #our-works .row-2.flex {
   justify-content: space-around;
-  margin: 80px 0 70px 0;
+  margin: 0;
   padding: 0;
   width: 100%;
 }
@@ -454,6 +460,7 @@ header nav .menu-text{
   transition: all 0.3s ease;
   cursor: pointer;
   outline: none;
+  margin-top: 60px;
 }
 
 #our-works .row-3>span.btns:hover {
@@ -469,6 +476,12 @@ header nav .menu-text{
   color: white;
   background-size: cover;
   position: relative;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  padding: 0 40px;
+  min-width: 240px;
 }
 
 #reviews .content {
@@ -477,14 +490,6 @@ header nav .menu-text{
   align-items: center;
   padding: 90px 0;
   width: 100%;
-}
-
-#reviews {
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-  display: flex;
-  padding: 0 40px;
 }
 
 #reviews .text {
@@ -880,6 +885,11 @@ footer .content.flex {
     font-size: 20px;
     line-height: 30px;
   }
+  #newsletter .form>[type="text"]{
+    font-size: 16px;
+    padding: 0 8px;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 600px) {
   #header-section .text-header-block > .title-header {
@@ -891,7 +901,14 @@ footer .content.flex {
     line-height: 30px;
     max-width: 90%;
   }
+  #newsletter .form>[type="text"]{
+    font-size: 12px;
+    padding: 0 8px;
+    text-align: center;
+    min-width: 230px;
+  }
 }
+
 
 @media screen and (max-width: 360px) {
   #header-section .text-header-block > .title-header {
@@ -902,4 +919,11 @@ footer .content.flex {
     font-size: 16px;
     line-height: 26px;
   }
+  #newsletter .form>[type="text"]{
+    margin: 0;
+  }
+#newsletter .form>[type="submit"]{
+  min-width: 230px;
+  margin: 10px 0 0 0;
+}
 }
