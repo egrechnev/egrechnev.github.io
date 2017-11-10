@@ -902,15 +902,18 @@ footer .content.flex {
     max-width: 90%;
   }
   #newsletter .form>[type="text"]{
-    font-size: 12px;
+    font-size: 14px;
     padding: 0 8px;
     text-align: center;
-    min-width: 230px;
+    min-width: 270px;
   }
+#reviews{
+  padding: 0 30px;
+}
 }
 
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 400px) {
   #header-section .text-header-block > .title-header {
     font-size: 31px;
     line-height: 31px;
@@ -921,9 +924,13 @@ footer .content.flex {
   }
   #newsletter .form>[type="text"]{
     margin: 0;
+    width: 270px;
   }
 #newsletter .form>[type="submit"]{
-  min-width: 230px;
+  width: 270px;
   margin: 10px 0 0 0;
+}
+#reviews{
+  padding: 0 20px;
 }
 }
