@@ -2,7 +2,41 @@ $(document).ready(function() {
   // Burger
   $(".burger-menu").click(function () {
           $(this).toggleClass("menu-on");
+          $(this).closest("body").toggleClass("active");
   });
+
+///////////////
+// $(".bm").click(function(){
+//  $(this).closest("body").toggleClass("active");
+// });
+//////////////
+  $('#header-section .sub-menu .link-to-services').click(function() {
+    $('html, body').animate({
+      scrollTop: $('#services').offset().top
+    }, 1000);
+  });
+  $('#header-section .sub-menu .link-to-our-works').click(function() {
+    $('html, body').animate({
+      scrollTop: $('#our-works').offset().top
+    }, 1000);
+  });
+    $('#header-section .sub-menu .link-to-hire-us').click(function() {
+    $('html, body').animate({
+      scrollTop: $('#our-team').offset().top
+    }, 1000);
+  });
+      $('#header-section .sub-menu .link-to-reviews').click(function() {
+    $('html, body').animate({
+      scrollTop: $('#reviews').offset().top
+    }, 1000);
+  });
+  $('#header-section .sub-menu .link-to-say-hello').click(function() {
+    $('html, body').animate({
+      scrollTop: $('#contacts').offset().top
+    }, 1000);
+  });
+//////////////
+
   // To smoth scroll when putten on link
   $('#header-section .more span').click(function() {
     $('html, body').animate({
