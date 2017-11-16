@@ -1,22 +1,21 @@
-@charset "utf-8";
 @import "font.css";
-html,
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 body {
     margin: 0;
     padding: 0;
-    height: 100%;
-    min-height: 100%;
-}
-
-body {
-    -webkit-font-smoothing: antialiased;
-    color: #3b434c;
     font-family: "Open Sans";
+    color: #3b434c;
 }
 
-
-
-/*Общие настройки*/
 
 a {
     text-decoration: none;
@@ -39,7 +38,7 @@ ul {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .orange {
@@ -78,8 +77,8 @@ header nav {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 header nav .menu-text {
@@ -136,38 +135,39 @@ footer {
 
 
 
-/*Секция header-section*/
+
+/*header section*/
 
 #header-section {
     background: url(../images/bg-layer.png), url(../images/bg-01.jpg) no-repeat center fixed;
     background-size: cover;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 #header-section .content {
     min-height: inherit;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     padding-top: 50px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     min-height: 100vh;
     width: 100%;
 }
 
 #header-section header.flex {
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 #logo {
@@ -221,6 +221,7 @@ footer {
 
 
 
+
 /*
 #header-section .text-header-block > .btns > span:first-of-type {
     margin-right: 25px;
@@ -254,11 +255,12 @@ footer {
 
 
 
-/*Секция services*/
+
+/*services section*/
 
 #services ul {
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     margin: 0;
     padding: 40px 0;
 }
@@ -324,25 +326,26 @@ footer {
 
 
 
-/*Секция newsletter*/
+
+/*newsletter section*/
 
 #newsletter {
     background: url(../images/bg-layer.png), url(../images/bg-02.jpg) no-repeat fixed center;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     background-size: cover;
 }
 
 #newsletter .form {
     min-height: 250px;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
 }
 
 #newsletter .form>[type="text"] {
@@ -357,7 +360,7 @@ footer {
     line-height: 40px;
     padding: 0 25px;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     margin-right: 2%;
 }
 
@@ -373,7 +376,7 @@ footer {
     font-weight: 600;
     line-height: 40px;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     cursor: pointer;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -388,20 +391,21 @@ footer {
 
 
 
-/*Секция our-works*/
+
+/*our-works section*/
 
 #our-works>.content.flex {
     padding: 80px 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     text-align: center;
     width: 100%;
 }
@@ -429,7 +433,7 @@ footer {
 
 #our-works .row-2.flex {
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -461,16 +465,16 @@ footer {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     padding: 0 50px;
     -webkit-transition: opacity 0.5s ease;
     transition: opacity 0.5s ease;
@@ -542,7 +546,8 @@ footer {
 
 
 
-/*Секция reviews*/
+
+/*reviews section*/
 
 #reviews {
     background: url(../images/bg-layer.png), url(../images/bg-03.jpg) no-repeat fixed center;
@@ -550,13 +555,13 @@ footer {
     background-size: cover;
     position: relative;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -567,14 +572,14 @@ footer {
 #reviews .content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding: 90px 0;
     width: 100%;
 }
@@ -635,7 +640,8 @@ footer {
 
 
 
-/*Секция our-team*/
+
+/*our-team section*/
 
 #our-team .row-1 {
     max-width: 455px;
@@ -645,14 +651,14 @@ footer {
 #our-team .content.flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: 100%;
     padding: 80px 0;
     text-align: center;
@@ -677,7 +683,7 @@ footer {
     margin: 0;
     padding: 0;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     width: 100%;
 }
 
@@ -693,11 +699,11 @@ footer {
     width: 100%;
     height: 314px;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
 }
 
 #our-team .row-2>li>.photo>span {
@@ -807,11 +813,11 @@ footer {
     display: flex;
     margin: 0 7.5px;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     cursor: pointer;
 }
 
@@ -841,27 +847,28 @@ footer {
 
 
 
-/*Секция contacts*/
+
+/*contacts section*/
 
 #contacts {
     background: url(../images/bg-layer.png), url(../images/bg-04.jpg) no-repeat center fixed;
     background-size: cover;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 #contacts .content.flex {
     width: 100%;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     padding: 80px 0;
 }
 
@@ -894,8 +901,8 @@ footer {
 
 #contacts .row-2 .form.flex {
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 #contacts .row-2 .form [type="text"] {
@@ -906,7 +913,7 @@ footer {
     border-radius: 10px;
     padding: 0 15px;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     color: #3b434c;
     font-size: 16px;
     font-weight: 400;
@@ -922,7 +929,7 @@ footer {
     padding: 15px;
     margin: 30px 0;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     color: #3b434c;
     font-family: "Open Sans";
     font-size: 16px;
@@ -992,7 +999,8 @@ footer {
 
 
 
-/*Секция footer*/
+
+/*footer section*/
 
 footer {
     background-color: #3b434c;
@@ -1000,11 +1008,11 @@ footer {
 
 footer .content.flex {
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     min-height: 100px;
     color: white;
     text-transform: uppercase;
