@@ -942,6 +942,7 @@ footer {
     height: 50px;
     background-color: #f7600e;
     border: 1px solid transparent;
+    outline: none;
     border-radius: 10px;
     color: white;
     font-family: "Open Sans";
