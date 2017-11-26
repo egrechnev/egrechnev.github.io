@@ -279,8 +279,6 @@ header section
 #header .logo {
     width: 230px;
     padding: 0 1px;
-    // height: 73px;
-    // background: url(../images/logo.png) no-repeat center;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
