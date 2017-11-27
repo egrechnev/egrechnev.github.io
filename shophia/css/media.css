@@ -280,7 +280,8 @@
    cursor: pointer;
    -moz-user-select: -moz-none;
    -webkit-user-select: none;
-    user-select: none;
+    -ms-user-select: none;
+       user-select: none;
 }
 #footer .block {
     display: none;
@@ -351,9 +352,13 @@
     display: block;
     width: 100%;
     margin: 20px 20px 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     // justify-content: space-around;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 
 #top .content ul.mobile li{
@@ -370,7 +375,8 @@
 }
 
 #top{
-    box-shadow: 0px 1px 2px #999999;
+    -webkit-box-shadow: 0px 1px 2px #999999;
+            box-shadow: 0px 1px 2px #999999;
 }
 
 #top .content ul li a:after{
