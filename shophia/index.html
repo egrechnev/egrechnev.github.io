@@ -8,24 +8,6 @@
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/jquery.bxslider.min.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-    $(document).ready(function() {
-        $('.bxslider').bxSlider({
-        	mode: 'horizontal',
-            auto: true,
-            stopAutoOnClick: false,
-            autoHover: true,
-            pause: 4000,
-            pager: true,
-            controls: false,
-            slideWidth: 0,
-            adaptiveHeight: true,
-        });
-    });
-    </script>
 </head>
 
 <body>
@@ -395,6 +377,25 @@
             <div class="arrow"></div>
         </div>
     </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.bxslider').bxSlider({
+            mode: 'horizontal',
+            auto: true,
+            stopAutoOnClick: false,
+            autoHover: true,
+            pause: 4000,
+            pager: true,
+            controls: false,
+            slideWidth: 0,
+            adaptiveHeight: true,
+        });
+    });
+    </script>    
 </body>
 
 </html>
