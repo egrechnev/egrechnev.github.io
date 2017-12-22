@@ -99,17 +99,17 @@ header nav .menu-text {
 
 .up {
     font-family: "icons";
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     position: fixed;
     right: 25px;
     bottom: 25px;
     background-color: #3b434c;
     border: 1px solid rgba(255, 255, 255, 0.2);
     color: #FFF;
-    font-size: 33px;
+    font-size: 23px;
     text-align: center;
-    line-height: 50px;
+    line-height: 40px;
     border-radius: 10px;
     display: none;
     cursor: pointer;
