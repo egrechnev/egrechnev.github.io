@@ -347,8 +347,8 @@ header section
     font-size: 12px;
 }
 
-#header .header-wr-right input[type="checkbox"] { 
-    display: none; 
+#header .header-wr-right input[type="checkbox"] {
+    display: none;
 }
 
 #header .header-wr-right label {
@@ -370,7 +370,7 @@ header section
 #header .header-wr-right .block li a{
     line-height: 34px;
     padding: 0 0 0 12px;
-    color: #fff; 
+    color: #fff;
     background: #000;
     display: inherit;
 }
@@ -379,8 +379,8 @@ header section
     background: #222;
 }
 
-#header .header-wr-right input[type=checkbox]:checked ~ .block { 
-    display: block; 
+#header .header-wr-right input[type=checkbox]:checked ~ .block {
+    display: block;
 }
 
 
@@ -404,13 +404,13 @@ slideshow section
 #slideshow .triangle-wr .position {
     position: absolute;
     top: -1px;
-    left: 36%;  
+    /* left: 36%; */
 }
 
 #slideshow .triangle {
-    border-left: 13.8vw solid transparent;
-    border-right: 13.8vw solid transparent;
-    border-top: 4.5vw solid #fff;
+	border-left: 184px solid transparent;
+    border-right: 184px solid transparent;
+    border-top: 58px solid #fff;
 }
 
 #slideshow .slides{
@@ -423,10 +423,14 @@ slideshow section
             justify-content: center;
 }
 
-// #slideshow .slides img{
-//  margin: 0 auto;
-//  min-width: 600px;
-// }
+/*  #slideshow .slides img{
+ margin: 0 auto;
+ min-width: 600px;
+ } */
+
+#slideshow .bxslider > div{
+	max-height: 600px;
+}
 
 #slideshow .bx-wrapper{
     border: none;
@@ -451,7 +455,7 @@ slideshow section
     border-bottom-color: #b2b2b2;
     position: relative;
     top: -10px;
-    display: inline-block;    
+    display: inline-block;
 }
 
 #slideshow  .bx-wrapper .bx-pager.bx-default-pager a:after {
@@ -466,7 +470,7 @@ slideshow section
 }
 
 #slideshow  .bx-wrapper .bx-pager.bx-default-pager a.active {
-    border-bottom-color: #000; 
+    border-bottom-color: #000;
 }
 
 #slideshow  .bx-wrapper .bx-pager.bx-default-pager a.active:after {
@@ -638,10 +642,10 @@ hand-picked section
 }
 
 .title .left, .title .right{
-    background: #eaeaea;    
+    background: #eaeaea;
     height: 1px;
     width: 100%;
-    
+
 }
 
 #hand-picked .relation {
@@ -708,7 +712,7 @@ hand-picked section
     top: 2.5%;
     bottom: 2.5%;
     left: 4.4%;
-    right: 4.4%; 
+    right: 4.4%;
 
 }
 
@@ -776,7 +780,7 @@ hand-picked section
 
 #hand-picked .btn:hover{
     -webkit-box-shadow: 0 0 0 1px #f0975c inset, 0 0 0 2px #fff inset;
-            box-shadow: 0 0 0 1px #f0975c inset, 0 0 0 2px #fff inset;  
+            box-shadow: 0 0 0 1px #f0975c inset, 0 0 0 2px #fff inset;
 }
 
 
@@ -857,7 +861,7 @@ summer-collection section
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
     -webkit-transition: opacity .5s ease;
-    transition: opacity .5s ease;   
+    transition: opacity .5s ease;
 }
 
 #summer-collection .products li .btn{
@@ -869,7 +873,7 @@ summer-collection section
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto;   
+    margin: auto;
     z-index: 1;
     text-align: center;
     text-transform: uppercase;
@@ -878,7 +882,7 @@ summer-collection section
     height: 0; width: 198px;
     border-bottom: 44px solid #000;
     border-left: 44px solid transparent;
-    border-right: 44px solid transparent;   
+    border-right: 44px solid transparent;
 }
 
 #summer-collection .products li:hover .btn{
@@ -947,7 +951,7 @@ customers-says section
 #customers-says .customers-says-wr .triangle-wr .position {
     position: absolute;
     top: -1px;
-    left: 36%;  
+    left: 36%;
 }
 
 #customers-says .customers-says-wr .triangle {
@@ -965,14 +969,14 @@ customers-says section
 }
 
 #customers-says .customer-left{
-    background: url(../images/customer-left.png) no-repeat left center; 
+    background: url(../images/customer-left.png) no-repeat left center;
     padding-left: 260px;
     padding-top: 138px;
     padding-bottom: 60px;
 }
 
 #customers-says .customer-right{
-    background: url(../images/customer-right.png) no-repeat right center;   
+    background: url(../images/customer-right.png) no-repeat right center;
     padding-right: 260px;
     padding-top: 138px;
     padding-bottom: 60px;
@@ -1019,15 +1023,15 @@ footer section
     padding-bottom: 60px;
 }
 
-#footer .content{ 
+#footer .content{
     padding: 0 0 60px 20px;
 }
 
-#footer input[type="checkbox"] { 
-    display: none; 
+#footer input[type="checkbox"] {
+    display: none;
 }
 
-#footer .content > li{ 
+#footer .content > li{
     width: 260px;
     display: inline-block;
     margin-top: 60px;
@@ -1037,7 +1041,7 @@ footer section
     width: auto;
 }
 
-#footer .content > li .footer-title{ 
+#footer .content > li .footer-title{
     text-transform: uppercase;
     color: #fff;
     font-size: 16px;
@@ -1046,7 +1050,7 @@ footer section
     position: relative;
 }
 
-#footer .content > li:last-child .footer-title{ 
+#footer .content > li:last-child .footer-title{
     margin-bottom: 30px;
 }
 
@@ -1054,13 +1058,13 @@ footer section
     line-height: 30px;
 }
 
-#footer .content > li > ul > li > a{ 
+#footer .content > li > ul > li > a{
     color: #737373;
     font-size: 14px;
-    font-weight: 400;   
+    font-weight: 400;
 }
 
-#footer .content > li > ul > li > a:hover{ 
+#footer .content > li > ul > li > a:hover{
     color: #D9BF8F;
 }
 
@@ -1101,7 +1105,7 @@ footer section
 }
 
 
-#footer .content > li .footer-title-subscribe{ 
+#footer .content > li .footer-title-subscribe{
     text-transform: uppercase;
     color: #fff;
     font-size: 16px;
@@ -1119,7 +1123,7 @@ footer section
     line-height: normal;
 }
 
-#footer form > div > input[type="text"] { 
+#footer form > div > input[type="text"] {
     background-color: #141414;
     border: none;
     outline: none;
@@ -1131,7 +1135,7 @@ footer section
     padding-left: 20px;
 }
 
-#footer form > div > input[type="submit"] { 
+#footer form > div > input[type="submit"] {
     color: #fff;
     width: 100px;
     font-size: 12px;
@@ -1139,7 +1143,7 @@ footer section
     line-height: 30px;
     background-color: #323030;
     border: none;
-    outline : none; 
+    outline : none;
     cursor: pointer;
     margin: 3px;
 }
@@ -1173,7 +1177,7 @@ footer section
 
 #footer .copy-wr{
     max-width: 1290px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 /*
@@ -1205,7 +1209,7 @@ bottom section
 
 #bottom .gre:hover{
     border-top: 1px solid #838383;
-    border-bottom: 1px solid #838383;   
+    border-bottom: 1px solid #838383;
     color: #636363;
 }
 
@@ -1224,7 +1228,7 @@ bottom section
     border-radius: 0px;
     display: none;
     cursor: pointer;
-    opacity: .9;   
+    opacity: .9;
 }
 
 .up .arrow-wr{
