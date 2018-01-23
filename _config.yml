@@ -1,0 +1,10 @@
+---
+title: Egrechnev.Github.Io
+timezone: Europe/Samara
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
