@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Моя страничка из Админ-панели</title>
+    <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700" media="all">
   </head>
@@ -20,17 +20,7 @@
       </div>
     </header>
     <div class="content">
-      <div class="container">
-  <h2 class="spacing">Моя страничка из Админ-панели</h2>
-
-  <div class="blog-post spacing">
-    <p class="summary"><span class="date">January 23, 2018</span></p>
-    <p>Ёба-ёба Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Гор решила речью предупреждал грустный силуэт заголовок. Строчка предупреждал живет сбить родного. Точках, текст текста пустился? Наш, силуэт, снова. Алфавит.
-<img src="/images/beans.jpg" alt="" /></p>
-
-  </div>
-</div>
-
+      {{ content }}
     </div>
     <footer>
       <div class="container">

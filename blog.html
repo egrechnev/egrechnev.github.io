@@ -1,97 +1,22 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Blog</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700" media="all">
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <nav class="main-nav">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/blog.html">Blog</a></li>
-          </ul>
-        </nav>
-        <h1><a href="/">Coffee<strong>Cafe</strong></a></h1>
-      </div>
-    </header>
-    <div class="content">
-      <div class="container">
+---
+layout: default
+title: Blog
+---
+<div class="container">
   <h2 class="spacing">Blog</h2>
 
   <div class="blog-posts">
-    
+    {% for post in site.posts %}
       <div class="blog-post spacing">
-        <h3><a href="/2018/01/24/colors-of-faces.html">Colors of faces</a></h3>
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
         <p class="summary">
-          
+          {{ post.category }}
           <span class="date">
-            
+            {{ page.date | date: "%d %B %Y" }}
           </span>
         </p>
-        <p><img src="/images/paint.jpg" alt="" /></p>
-
+        {{ post.excerpt }}
       </div>
-    
-      <div class="blog-post spacing">
-        <h3><a href="/2018/01/23/mypage.html">Моя страничка из Админ-панели</a></h3>
-        <p class="summary">
-          
-          <span class="date">
-            
-          </span>
-        </p>
-        <p>Ёба-ёба Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Гор решила речью предупреждал грустный силуэт заголовок. Строчка предупреждал живет сбить родного. Точках, текст текста пустился? Наш, силуэт, снова. Алфавит.
-<img src="/images/beans.jpg" alt="" /></p>
-
-      </div>
-    
-      <div class="blog-post spacing">
-        <h3><a href="/information/2018/01/22/what-is-coffee.html">What is Coffee?</a></h3>
-        <p class="summary">
-          Information
-          <span class="date">
-            
-          </span>
-        </p>
-        <p>Coffee is a brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant. The Coffea plant is native to subtropical Africa and some islands in southern Asia. The plant was exported from Africa to countries around the world and coffee plants are now cultivated in over 70 countries, primarily in the equatorial regions of the Americas, Southeast Asia, India, and Africa. The two most commonly grown are the highly regarded arabica, and the less sophisticated but stronger and more hardy robusta. Once ripe, coffee beans are picked, processed, and dried. Green (unroasted) coffee beans are one of the most traded agricultural commodities in the world. Once traded, the coffee beans are roasted to varying degrees, depending on the desired flavor. Roasted beans are ground and brewed to produce coffee as a beverage.</p>
-
-<p>Coffee is a brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant. The Coffea plant is native to subtropical Africa and some islands in southern Asia. The plant was exported from Africa to countries around the world and coffee plants are now cultivated in over 70 countries, primarily in the equatorial regions of the Americas, Southeast Asia, India, and Africa. The two most commonly grown are the highly regarded arabica, and the less sophisticated but stronger and more hardy robusta. Once ripe, coffee beans are picked, processed, and dried. Green (unroasted) coffee beans are one of the most traded agricultural commodities in the world. Once traded, the coffee beans are roasted to varying degrees, depending on the desired flavor. Roasted beans are ground and brewed to produce coffee as a beverage.</p>
-
-<p>Coffee is a brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant. The Coffea plant is native to subtropical Africa and some islands in southern Asia. The plant was exported from Africa to countries around the world and coffee plants are now cultivated in over 70 countries, primarily in the equatorial regions of the Americas, Southeast Asia, India, and Africa. The two most commonly grown are the highly regarded arabica, and the less sophisticated but stronger and more hardy robusta. Once ripe, coffee beans are picked, processed, and dried. Green (unroasted) coffee beans are one of the most traded agricultural commodities in the world. Once traded, the coffee beans are roasted to varying degrees, depending on the desired flavor. Roasted beans are ground and brewed to produce coffee as a beverage.
-Source / Read more <a href="https://en.wikipedia.org/wiki/Coffee">Wikipedia</a>.</p>
-
-      </div>
-    
-      <div class="blog-post spacing">
-        <h3><a href="/information/2018/01/22/copy-what-is-coffee.html">Copy Lorem!</a></h3>
-        <p class="summary">
-          Information
-          <span class="date">
-            
-          </span>
-        </p>
-        <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Гор решила речью предупреждал грустный силуэт заголовок. Строчка предупреждал живет сбить родного. Точках, текст текста пустился? Наш, силуэт, снова. Алфавит.</p>
-
-<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Безопасную не, повстречался языком о текста щеке страну своих что своего вопроса заглавных послушавшись имени это возвращайся знаках запятых предложения.</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus aperiam tenetur, molestias eius, velit sed consectetur dolores blanditiis rerum ipsum quo labore quidem unde harum. Quis, iusto assumenda consectetur cum!</p>
-
-<p>Source / Read more <a href="https://en.wikipedia.org/wiki/Coffee">Wikipedia</a>.</p>
-
-      </div>
-    
+    {% endfor %}
   </div>
 </div>
-    </div>
-    <footer>
-      <div class="container">
-        <p class="center-text"> <a href="http://cloudcannon.com">Created by CloudCannon</a></p>
-      </div>
-    </footer>
-  </body>
-</html>
