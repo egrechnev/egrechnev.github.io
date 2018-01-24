@@ -643,6 +643,180 @@ terms section
     right: 0;
 }
 
+/*
+
+hand-picked section
+
+*/
+
+.title{
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 65px 0 30px 0;
+}
+
+.title .center{
+    min-width: 384px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 60px;
+}
+
+.title .left, .title .right{
+    background: #eaeaea;
+    height: 1px;
+    width: 100%;
+
+}
+
+#hand-picked .relation {
+    position: relative;
+}
+
+#hand-picked .relation-offset {
+    padding-top: 63%;
+}
+
+#hand-picked .relation-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    overflow: hidden;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+}
+
+#hand-picked .large {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    width: 35.4%;
+    overflow: hidden;
+    position: relative;
+}
+
+#hand-picked .white-border {
+    border: 3px solid #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 5.2%;
+    bottom: 5.2%;
+    left: 5.2%;
+    right: 5.2%;
+    -webkit-transition: background .3s linear;
+    transition: background .3s linear;
+}
+
+#hand-picked .white-border:hover{
+    background: rgba(0, 0, 0, 0.2);
+    border: 3px solid rgba(0, 0, 0, 0);
+}
+
+#hand-picked .white-border:hover .btn{
+    opacity: 1;
+}
+
+#hand-picked .white-border-large {
+    border: 3px solid #fff;
+    position: absolute;
+    top: 2.5%;
+    bottom: 2.5%;
+    left: 4.4%;
+    right: 4.4%;
+
+}
+
+#hand-picked .product {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    width: 30.68%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+#hand-picked .small-left {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+}
+
+#hand-picked .item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 48.699%;
+            flex: 0 1 48.699%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+#hand-picked .btn{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 110px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    background-color: #f0975c;
+    -webkit-box-shadow: 0 0 0 3px #f0975c inset, 0 0 0 4px #fff inset;
+            box-shadow: 0 0 0 3px #f0975c inset, 0 0 0 4px #fff inset;
+    margin: auto auto 10% auto;
+    opacity: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    -webkit-transition: -webkit-box-shadow .2s linear;
+    transition: -webkit-box-shadow .2s linear;
+    transition: box-shadow .2s linear;
+    transition: box-shadow .2s linear, -webkit-box-shadow .2s linear;
+}
+
+#hand-picked .btn:hover{
+    -webkit-box-shadow: 0 0 0 1px #f0975c inset, 0 0 0 2px #fff inset;
+            box-shadow: 0 0 0 1px #f0975c inset, 0 0 0 2px #fff inset;
+}
+
 /***********************************
 
             BXSlider
