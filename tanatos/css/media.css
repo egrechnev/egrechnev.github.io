@@ -1,12 +1,4 @@
 @media screen and (max-width: 1000px) {
-    #header-section .text-header-block>.title-header {
-        font-size: 55px;
-        line-height: 55px
-    }
-    #header-section .text-header-block>.title-text {
-        font-size: 20px;
-        line-height: 30px;
-    }
     #newsletter .form>[type="text"] {
         font-size: 16px;
         padding: 0 8px;
@@ -15,15 +7,6 @@
 }
 
 @media screen and (max-width: 600px) {
-    #header-section .text-header-block>.title-header {
-        font-size: 38px;
-        line-height: 38px;
-    }
-    #header-section .text-header-block>.title-text {
-        font-size: 18px;
-        line-height: 30px;
-        max-width: 90%;
-    }
     #newsletter .form>[type="text"] {
         font-size: 14px;
         padding: 0 8px;
@@ -32,20 +15,12 @@
     }
     #reviews {
         padding: 0 30px;
-        mix-width: 260px; 
+        mix-width: 260px;
     }
 }
 
 
 @media screen and (max-width: 400px) {
-    #header-section .text-header-block>.title-header {
-        font-size: 31px;
-        line-height: 31px;
-    }
-    #header-section .text-header-block>.title-text {
-        font-size: 16px;
-        line-height: 26px;
-    }
     #newsletter .form>[type="text"] {
         margin: 0;
         width: 270px;
@@ -57,5 +32,15 @@
     #reviews {
         padding: 0 20px;
         min-width: 280px;
+    }
+
+    #contacts .row-2{
+        max-width: 90%;
+    }
+    #contacts .row-2 .form>.social>a{
+        margin-right: 10px;
+    }
+    footer .content.flex{
+        padding: 2px 85px 0 85px;
     }
 }

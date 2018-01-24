@@ -78,7 +78,7 @@ $(document).ready(function() {
   //         ? 'HIDE' : 'SHOW MORE';
   //     $(e.target).text(btnLabel);
   // });
-  
+
   // check reviews
   var leftarrow = $('.arrow-left'),
     rightarrow = $('.arrow-right');
@@ -109,4 +109,14 @@ $(document).ready(function() {
       });
     }
   });
+
+    //Chrome Smooth Scroll
+  try {
+    $.browserSelector();
+    if($("html").hasClass("chrome")) {
+      $.smoothScroll();
+    }
+  } catch(err) {
+
+  }
 });
