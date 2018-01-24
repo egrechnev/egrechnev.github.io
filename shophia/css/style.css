@@ -405,6 +405,10 @@ slideshow section
     position: absolute;
     top: -1px;
     /* left: 36%; */
+    left: 0;
+    right: 0;
+    max-width: 368px;
+    margin: 0 auto;
 }
 
 #slideshow .triangle {
@@ -864,7 +868,7 @@ summer-collection section
     transition: opacity .5s ease;
 }
 
-#summer-collection .products li .btn{
+#summer-collection .products li a.btn{
     color: #fff;
     font-size: 14px;
     line-height: 44px;
@@ -885,7 +889,11 @@ summer-collection section
     border-right: 44px solid transparent;
 }
 
-#summer-collection .products li:hover .btn{
+#summer-collection .products li a.btn:hover{
+	text-decoration: underline;
+}
+
+#summer-collection .products li:hover a.btn{
     border-bottom: 44px solid #f0975c;
 }
 
@@ -1205,6 +1213,8 @@ bottom section
     border-bottom: 1px solid #363636;
     text-transform: uppercase;
     color: #363636;
+    line-height: 18px;
+	font-size: 14px;
 }
 
 #bottom .gre:hover{
