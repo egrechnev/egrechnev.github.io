@@ -1,89 +1,45 @@
-# ----------------------------------------------------------------------
-# | Expires headers |
-# ----------------------------------------------------------------------
+<ifModule mod_expires.c>
 
-# Serve resources with far-future expires headers.
-#
-# (!) If you don't control versioning with filename-based
-# cache busting, you should consider lowering the cache times
-# to something like one week.
-#
-# https://httpd.apache.org/docs/current/mod/mod_expi...
+# Add correct content-type for fonts
+AddType application/vnd.ms-fontobject .eot
+AddType application/x-font-ttf .ttf
+AddType application/x-font-opentype .otf
+AddType application/x-font-woff .woff
+AddType image/svg+xml .svg
 
-ExpiresActive on
-ExpiresDefault "access plus 1 month"
+# Compress compressible fonts
+AddOutputFilterByType DEFLATE application/x-font-ttf application/x-font-opentype image/svg+xml
 
-# CSS
+ExpiresActive On
+ExpiresDefault "access plus 5 seconds"
 
-ExpiresByType text/css "access plus 1 year"
+# Cache Images
+ExpiresByType image/x-icon "access plus 2592000 seconds"
+ExpiresByType image/jpeg "access plus 2592000 seconds"
+ExpiresByType image/png "access plus 2592000 seconds"
+ExpiresByType image/gif "access plus 2592000 seconds"
+ExpiresByType image/svg+xml "access plus 2592000 seconds"
 
-# Data interchange
+# Cache Fonts
+ExpiresByType application/vnd.ms-fontobject "access plus 2592000 seconds"
+ExpiresByType application/x-font-ttf "access plus 2592000 seconds"
+ExpiresByType application/x-font-opentype "access plus 2592000 seconds"
+ExpiresByType application/x-font-woff "access plus 2592000 seconds"
+ExpiresByType image/svg+xml "access plus 2592000 seconds"
 
-ExpiresByType application/atom+xml "access plus 1 hour"
-ExpiresByType application/rdf+xml "access plus 1 hour"
-ExpiresByType application/rss+xml "access plus 1 hour"
+# Cache other content types (Flash, CSS, JS, HTML, XML)
+ExpiresByType application/x-shockwave-flash "access plus 2592000 seconds"
+ExpiresByType text/css "access plus 604800 seconds"
+ExpiresByType text/javascript "access plus 2592000 seconds"
+ExpiresByType application/javascript "access plus 2592000 seconds"
+ExpiresByType application/x-javascript "access plus 2592000 seconds"
+ExpiresByType text/html "access plus 600 seconds"
+ExpiresByType application/xhtml+xml "access plus 600 seconds"
 
-ExpiresByType application/json "access plus 0 seconds"
-ExpiresByType application/ld+json "access plus 0 seconds"
-ExpiresByType application/schema+json "access plus 0 seconds"
-ExpiresByType application/vnd.geo+json "access plus 0 seconds"
-ExpiresByType application/xml "access plus 0 seconds"
-ExpiresByType text/xml "access plus 0 seconds"
+</ifModule>
 
-# Favicon (cannot be renamed!) and cursor images
+<ifModule mod_deflate.c>
 
-ExpiresByType image/vnd.microsoft.icon "access plus 1 week"
-ExpiresByType image/x-icon "access plus 1 week"
+AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript
 
-# HTML
-
-ExpiresByType text/html "access plus 0 seconds"
-
-# JavaScript
-
-ExpiresByType application/javascript "access plus 1 year"
-ExpiresByType application/x-javascript "access plus 1 year"
-ExpiresByType text/javascript "access plus 1 year"
-
-# Manifest files
-
-ExpiresByType application/manifest+json "access plus 1 week"
-ExpiresByType application/x-web-app-manifest+json "access plus 0 seconds"
-ExpiresByType text/cache-manifest "access plus 0 seconds"
-
-# Media files
-
-ExpiresByType audio/ogg "access plus 1 month"
-ExpiresByType image/bmp "access plus 1 month"
-ExpiresByType image/gif "access plus 1 month"
-ExpiresByType image/jpeg "access plus 1 month"
-ExpiresByType image/png "access plus 1 month"
-ExpiresByType image/svg+xml "access plus 1 month"
-ExpiresByType image/webp "access plus 1 month"
-ExpiresByType video/mp4 "access plus 1 month"
-ExpiresByType video/ogg "access plus 1 month"
-ExpiresByType video/webm "access plus 1 month"
-
-# Web fonts
-
-# Embedded OpenType (EOT)
-ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
-ExpiresByType font/eot "access plus 1 month"
-
-# OpenType
-ExpiresByType font/opentype "access plus 1 month"
-
-# TrueType
-ExpiresByType application/x-font-ttf "access plus 1 month"
-
-# Web Open Font Format (WOFF) 1.0
-ExpiresByType application/font-woff "access plus 1 month"
-ExpiresByType application/x-font-woff "access plus 1 month"
-ExpiresByType font/woff "access plus 1 month"
-
-# Web Open Font Format (WOFF) 2.0
-ExpiresByType application/font-woff2 "access plus 1 month"
-
-# Other
-
-ExpiresByType text/x-cross-domain-policy "access plus 1 week"
+</ifModule>
