@@ -1,4 +1,0 @@
-/* scrollBar:trueのときもスクロールバーを表示させない */
-body,html{
-    overflow: hidden !important;
-}
