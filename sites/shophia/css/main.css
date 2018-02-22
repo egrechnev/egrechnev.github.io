@@ -584,28 +584,18 @@ bottom section
 }
 
 #bottom .content{
-    height: 40px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    min-height: 40px;
 }
 
 #bottom .gre {
-    border-top: 1px solid #363636;
-    border-bottom: 1px solid #363636;
-    text-transform: uppercase;
-    color: #363636;
-    line-height: 18px;
-	font-size: 14px;
+    width: 36px;
+    margin: 3px auto 0;
+    opacity: .5;
+    transition: opacity .2s ease-out;
 }
 
 #bottom .gre:hover{
-    border-top: 1px solid #838383;
-    border-bottom: 1px solid #838383;
-    color: #636363;
+    opacity: .8;
 }
 
 .up {
