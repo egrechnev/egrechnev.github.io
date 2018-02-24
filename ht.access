@@ -1,4 +1,4 @@
-# ErrorDocument 404 http://egrechnev.ru/404.html
+ErrorDocument 404 http://egrechnev.ru/404.html
 
 <ifModule mod_expires.c>
 
