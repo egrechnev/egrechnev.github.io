@@ -12,4 +12,13 @@ $(document).ready(function() {
       scrollTop: "0"
     }, 800)
   });
-});  
+
+//Fake links
+  var links = document.querySelectorAll('a[data-fake-link], input[name=submit]');
+  for(var i = 0; i < links.length; i++){
+    links[i].onclick = confirmAway;
+  }
+  function confirmAway(e){
+    return false;
+  }
+});
