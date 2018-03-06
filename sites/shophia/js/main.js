@@ -19,6 +19,6 @@ $(document).ready(function() {
     links[i].onclick = confirmAway;
   }
   function confirmAway(e){
-    return false;
+    e.preventDefault();
   }
 });
