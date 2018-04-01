@@ -3256,42 +3256,42 @@
 }
 
 #service .content .service li:nth-child(1)>.item {
-    background: url(../images/svg/bum.svg) no-repeat;
+    background: url(images/svg/bum.svg) no-repeat;
     background-size: 80px
 }
 
 #service .content .service li:nth-child(2)>.item {
-    background: url(../images/svg/taximeter.svg) 0 5px no-repeat;
+    background: url(images/svg/taximeter.svg) 0 5px no-repeat;
     background-size: 80px
 }
 
 #service .content .service li:nth-child(3)>.item {
-    background: url(../images/svg/kid.svg) no-repeat;
+    background: url(images/svg/kid.svg) no-repeat;
     background-size: 80px
 }
 
 #service .content .service li:nth-child(4)>.item {
-    background: url(../images/svg/doc.svg) 0 4px no-repeat;
+    background: url(images/svg/doc.svg) 0 4px no-repeat;
     background-size: 80px
 }
 
 #service .content .service li:nth-child(5)>.item {
-    background: url(../images/svg/trans.svg) no-repeat;
+    background: url(images/svg/trans.svg) no-repeat;
     background-size: 80px
 }
 
 #service .content .service li:nth-child(6)>.item {
-    background: url(../images/svg/card.svg) no-repeat;
+    background: url(images/svg/card.svg) no-repeat;
     background-size: 80px
 }
 
 #service .content .service li:nth-child(7)>.item {
-    background: url(../images/svg/smartphone.svg) 0 5px no-repeat;
+    background: url(images/svg/smartphone.svg) 0 5px no-repeat;
     background-size: 80px
 }
 
 #service .content .service li:nth-child(8)>.item {
-    background: url(../images/svg/time.svg) no-repeat;
+    background: url(images/svg/time.svg) no-repeat;
     background-size: 80px
 }
 
@@ -3452,7 +3452,7 @@
 }
 
 #mobile-app .content .text .icon-app {
-    background: url(../images/icon-60.png) top left no-repeat;
+    background: url(images/icon-60.png) top left no-repeat;
     max-width: 450px;
     padding-left: 75px;
     padding-top: 5px;
@@ -3806,7 +3806,9 @@
         padding-bottom: 10px
     }
     #about .footer .footer-contacts-mobile div:last-child {
-        padding-bottom: 0
+        padding-bottom: 0;
+        width: auto;
+        margin: 0 auto
     }
 }
 
@@ -3845,7 +3847,7 @@
     }
     #mobile-app .content .text .icon-app {
         max-width: 450px;
-        background: url(../images/icon.png) top left no-repeat;
+        background: url(images/icon.png) top left no-repeat;
         background-size: 60px;
         padding-left: 75px;
         padding-top: 5px;

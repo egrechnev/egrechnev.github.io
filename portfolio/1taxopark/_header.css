@@ -1,3 +1,42 @@
+/* open-sans-300 - latin_cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'),
+     url('fonts/OpenSans/open-sans-v15-latin_cyrillic-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+     url('fonts/OpenSans/open-sans-v15-latin_cyrillic-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* open-sans-regular - latin_cyrillic */
+  @font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+     url('fonts/OpenSans/open-sans-v15-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+     url('fonts/OpenSans/open-sans-v15-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* open-sans-600 - latin_cyrillic */
+  @font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
+     url('fonts/OpenSans/open-sans-v15-latin_cyrillic-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+     url('fonts/OpenSans/open-sans-v15-latin_cyrillic-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  @font-face {
+    font-family: "arrow";
+    src: url("fonts/icons/arrow.eot?66295683");
+    src: url("fonts/icons/arrow.eot?66295683#iefix")
+        format("embedded-opentype"),
+      url("fonts/icons/arrow.woff?66295683") format("woff"),
+      url("fonts/icons/arrow.ttf?66295683") format("truetype"),
+      url("fonts/icons/arrow.svg?66295683#arrow") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -511,7 +550,7 @@ a {
   max-width: 820px;
 }
 #bonus {
-  background: url(../images/bg-bonus.jpg) center no-repeat;
+  background: url(images/bg-bonus.jpg) center no-repeat;
   background-size: cover;
 }
 

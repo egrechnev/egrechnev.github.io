@@ -76,45 +76,45 @@ Service section
 }
 
 #service .content .service li:nth-child(1) > .item {
-  background: url(../images/svg/bum.svg) no-repeat;
+  background: url(images/svg/bum.svg) no-repeat;
   background-size: 80px;
 }
 
 #service .content .service li:nth-child(2) > .item {
-  background: url(../images/svg/taximeter.svg) no-repeat;
+  background: url(images/svg/taximeter.svg) no-repeat;
   background-size: 80px;
   background-position: 0px 5px;
 }
 
 #service .content .service li:nth-child(3) > .item {
-  background: url(../images/svg/kid.svg) no-repeat;
+  background: url(images/svg/kid.svg) no-repeat;
   background-size: 80px;
 }
 
 #service .content .service li:nth-child(4) > .item {
-  background: url(../images/svg/doc.svg) no-repeat;
+  background: url(images/svg/doc.svg) no-repeat;
   background-size: 80px;
   background-position: 0px 4px;
 }
 
 #service .content .service li:nth-child(5) > .item {
-  background: url(../images/svg/trans.svg) no-repeat;
+  background: url(images/svg/trans.svg) no-repeat;
   background-size: 80px;
 }
 
 #service .content .service li:nth-child(6) > .item {
-  background: url(../images/svg/card.svg) no-repeat;
+  background: url(images/svg/card.svg) no-repeat;
   background-size: 80px;
 }
 
 #service .content .service li:nth-child(7) > .item {
-  background: url(../images/svg/smartphone.svg) no-repeat;
+  background: url(images/svg/smartphone.svg) no-repeat;
   background-size: 80px;
   background-position: 0px 5px;
 }
 
 #service .content .service li:nth-child(8) > .item {
-  background: url(../images/svg/time.svg) no-repeat;
+  background: url(images/svg/time.svg) no-repeat;
   background-size: 80px;
 }
 
@@ -125,7 +125,7 @@ Child-Seat section
 */
 
 #child-seat {
-  /* background: url(../images/bg-child-seat.jpg) no-repeat top center #e1d6c2; */
+  /* background: url(images/bg-child-seat.jpg) no-repeat top center #e1d6c2; */
   background-repeat: no-repeat;
   background-position: center;
   background-color: #e1d6c2;
@@ -180,7 +180,7 @@ Time section
 */
 
 #time {
-  /* background: url(../images/bg-time.jpg) no-repeat center #c8c7d7; */
+  /* background: url(images/bg-time.jpg) no-repeat center #c8c7d7; */
   background-repeat: no-repeat;
   background-position: center;
   background-color: #c8c7d7;
@@ -234,7 +234,7 @@ Mobile-app section
 */
 
 #mobile-app {
-  /* background: url(../images/bg-mobile-app.jpg) bottom right no-repeat #b3afa4; */
+  /* background: url(images/bg-mobile-app.jpg) bottom right no-repeat #b3afa4; */
   background-repeat: no-repeat;
   background-position: bottom right;
   background-color: #b3afa4;
@@ -298,7 +298,7 @@ Mobile-app section
 }
 
 #mobile-app .content .text .icon-app {
-  background: url(../images/icon-60.png) no-repeat top left;
+  background: url(images/icon-60.png) no-repeat top left;
   max-width: 450px;
   padding-left: 75px;
   padding-top: 5px;
@@ -328,7 +328,7 @@ About section
 */
 
 #about {
-  /* background: url(../images/bg-about.jpg) no-repeat center right #93837f; */
+  /* background: url(images/bg-about.jpg) no-repeat center right #93837f; */
   background-repeat: no-repeat;
   background-position: center right;
   background-color: #93837f;
