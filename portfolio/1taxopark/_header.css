@@ -139,7 +139,7 @@ a {
 }
 
 .mobile-app .mobile-link a.app-store > .ico {
-  background: url(../images/svg/apple.svg) no-repeat;
+  background: url(images/svg/apple.svg) no-repeat;
   background-position: 0 0;
   background-size: 25px;
   width: 25px;
@@ -151,7 +151,7 @@ a {
 }
 
 .mobile-app .mobile-link a.google-play > .ico {
-  background: url(../images/svg/google-play.svg) no-repeat;
+  background: url(images/svg/google-play.svg) no-repeat;
   background-size: 25px;
   width: 25px;
   height: 25px;
@@ -442,7 +442,7 @@ a {
 .close-icon {
   width: 16px;
   height: 16px;
-  background: url(../images/close.png) no-repeat;
+  background: url(images/close.png) no-repeat;
   position: absolute;
   top: 20px;
   right: 20px;
@@ -477,7 +477,7 @@ a {
 
   */
 #vacancies {
-  background: url(../images/bg-vacancies.jpg) center no-repeat;
+  background: url(images/bg-vacancies.jpg) center no-repeat;
   background-size: cover;
 }
 
