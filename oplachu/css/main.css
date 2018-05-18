@@ -2784,6 +2784,10 @@ body {
       margin-bottom: 20px; }
 
 /*==========  Desktop First  ==========*/
+@media only screen and (max-width: 1366px) {
+  #main .row h1 {
+    font-size: 36px; } }
+
 @media (max-width: 1199.98px) {
   .btn-bg {
     display: inline-block;
@@ -2826,9 +2830,7 @@ body {
       color: #ffffff;
       text-decoration: none; }
   .header .menu li a {
-    font-size: 16px; }
-  #main .row h1 {
-    font-size: 36px; } }
+    font-size: 16px; } }
 
 @media (max-width: 767.98px) {
   #app-features h2 .text-app {
