@@ -13,7 +13,7 @@ $(function() {
 	    loop:true,
 	    autoplay: true,
 	    autoplayTimeout: 3000,
-	    margin: 30,
+	    // margin: 30,
 	    autoplayHoverPause: true,
 	    // autoWidth: true,
 	    nav:true,
@@ -22,10 +22,10 @@ $(function() {
 	        0:{
 	            items:1
 	        },
-	        600:{
+	        768:{
 	            items:2
 	        },
-	        1000:{
+	        992:{
 	            items:3
 	        }
 	    }

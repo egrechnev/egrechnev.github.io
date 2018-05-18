@@ -2830,4 +2830,8 @@ body {
   #main .row h1 {
     font-size: 36px; } }
 
+@media (max-width: 767.98px) {
+  #app-features h2 .text-app {
+    display: none; } }
+
 /*==========  Mobile First  ==========*/
