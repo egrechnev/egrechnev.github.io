@@ -2694,7 +2694,7 @@ body {
         font-weight: 700; }
 
 #app-features {
-  padding: 80px 0; }
+  padding: 50px 0; }
   #app-features .row {
     position: relative; }
     #app-features .row .col {
@@ -2781,7 +2781,7 @@ body {
         opacity: 1; }
   #app-features .more {
     text-align: center;
-    margin-top: 50px; }
+    margin-top: 40px; }
     #app-features .more .more-title {
       font-size: 24px;
       margin-bottom: 20px; }
