@@ -2784,7 +2784,7 @@ body {
       margin-bottom: 20px; }
 
 /*==========  Desktop First  ==========*/
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1400px) {
   #main .row h1 {
     font-size: 36px; } }
 
