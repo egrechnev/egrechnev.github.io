@@ -2650,10 +2650,7 @@ body {
     padding: 0;
     margin: 0; }
     .header .menu li {
-      display: inline-block;
-      margin-left: 50px; }
-      .header .menu li:first-child {
-        margin-left: 0; }
+      display: inline-block; }
       .header .menu li a {
         color: #000000;
         font-size: 18px;
@@ -2787,4 +2784,50 @@ body {
       margin-bottom: 20px; }
 
 /*==========  Desktop First  ==========*/
+@media (max-width: 1199.98px) {
+  .btn-bg {
+    display: inline-block;
+    width: 200px;
+    line-height: 46px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #E89B00;
+    border: 2px solid #E89B00;
+    color: #ffffff;
+    text-align: center;
+    -webkit-border-radius: 8px;
+            border-radius: 8px;
+    -webkit-transition: background .3s ease;
+    -o-transition: background .3s ease;
+    transition: background .3s ease; }
+    .btn-bg:hover {
+      background-color: #ffffff;
+      border: 2px solid #E89B00;
+      color: #E89B00;
+      text-decoration: none; }
+  .btn-no-bg {
+    display: inline-block;
+    width: 200px;
+    line-height: 46px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #ffffff;
+    border: 2px solid #E89B00;
+    color: #E89B00;
+    text-align: center;
+    -webkit-border-radius: 8px;
+            border-radius: 8px;
+    -webkit-transition: background .3s ease;
+    -o-transition: background .3s ease;
+    transition: background .3s ease; }
+    .btn-no-bg:hover {
+      background-color: #E89B00;
+      border: 2px solid #E89B00;
+      color: #ffffff;
+      text-decoration: none; }
+  .header .menu li a {
+    font-size: 16px; }
+  #main .row h1 {
+    font-size: 36px; } }
+
 /*==========  Mobile First  ==========*/
