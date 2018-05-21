@@ -2851,7 +2851,8 @@ h2 {
   background-color: #F4F3F2;
   overflow: hidden; }
   #includes h2 {
-    padding: 15px 10px;
+    padding: 15px 20px;
+    display: inline-block;
     color: #ffffff;
     background-color: #E89B00; }
   #includes .apps-title {
@@ -2896,16 +2897,19 @@ h2 {
     font-size: 36px; }
   #main .row h1 {
     font-size: 36px; }
+  #app-features .row .slides {
+    padding: 10px 0 20px 0; }
   #app-features .owl-carousel .item img {
     width: 170px; }
   #app-features .more {
     margin-top: 0px; }
     #app-features .more .more-title {
       margin-bottom: 10px; }
-  #includes h2 {
-    font-size: 32px; }
   #includes .apps-title {
     font-size: 22px; }
+  #includes .apps-wrap {
+    padding-bottom: 15px;
+    padding-top: 2px; }
   #includes .apps {
     margin-top: 5px;
     height: 370px; }
@@ -2969,8 +2973,8 @@ h2 {
     #app-features .more .more-title {
       font-size: 18px; }
   #includes h2 {
-    padding: 10px;
-    font-size: 38px; }
+    padding: 10px 20px;
+    font-size: 34px; }
   #includes .apps-wrap {
     padding-bottom: 20px;
     padding-top: 20px; }
@@ -3152,7 +3156,7 @@ h2 {
     margin-bottom: 10px; }
   #includes h2 {
     margin-bottom: 20px;
-    font-size: 22px; }
+    font-size: 20px; }
   #includes .apps-title {
     font-size: 14px; }
     #includes .apps-title .text-right {
