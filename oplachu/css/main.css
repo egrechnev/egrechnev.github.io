@@ -2899,7 +2899,7 @@ h2 {
   #app-features .owl-carousel .item img {
     width: 170px; }
   #app-features .more {
-    margin-top: -20px; }
+    margin-top: 0px; }
     #app-features .more .more-title {
       margin-bottom: 10px; }
   #includes h2 {
@@ -3147,11 +3147,9 @@ h2 {
   #app-features .owl-carousel .owl-nav {
     left: 15px;
     right: 15px; }
-  #app-features .more {
-    margin-top: -20px; }
-    #app-features .more .more-title {
-      font-size: 16px;
-      margin-bottom: 10px; }
+  #app-features .more .more-title {
+    font-size: 16px;
+    margin-bottom: 10px; }
   #includes h2 {
     margin-bottom: 20px;
     font-size: 22px; }
