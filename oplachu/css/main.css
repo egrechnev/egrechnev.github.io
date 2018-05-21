@@ -2892,17 +2892,30 @@ h2 {
 
 /*==========  Desktop First  ==========*/
 @media only screen and (max-width: 1400px) {
+  h2 {
+    font-size: 36px; }
   #main .row h1 {
     font-size: 36px; }
   #app-features .owl-carousel .item img {
-    width: 200px; }
+    width: 170px; }
+  #app-features .more {
+    margin-top: -20px; }
+    #app-features .more .more-title {
+      margin-bottom: 10px; }
+  #includes h2 {
+    font-size: 32px; }
+  #includes .apps-title {
+    font-size: 22px; }
   #includes .apps {
-    height: 430px; }
+    margin-top: 5px;
+    height: 370px; }
     #includes .apps:before {
-      right: -37px;
-      width: 900px; }
+      right: 0px;
+      width: 800px; }
+    #includes .apps .icons-apps {
+      margin-bottom: 0; }
   #includes .try-wr {
-    min-height: 120px; }
+    min-height: 100px; }
   #includes .try-title {
     margin-bottom: 15px; } }
 
@@ -2962,7 +2975,7 @@ h2 {
     padding-bottom: 20px;
     padding-top: 20px; }
   #includes .apps:before {
-    right: -120px; } }
+    right: -65px; } }
 
 @media (max-width: 991.98px) {
   h2 {
@@ -3069,7 +3082,7 @@ h2 {
   #includes .apps {
     margin-top: 0; }
     #includes .apps:before {
-      right: -183px; }
+      right: -85px; }
     #includes .apps .icons-apps {
       position: absolute;
       top: 0; }
@@ -3095,9 +3108,12 @@ h2 {
   #includes h2 {
     font-size: 28px; }
   #includes .apps:before {
-    right: -364px; } }
+    right: -264px; } }
 
 @media (max-width: 575.98px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px; }
   h2 {
     font-size: 26px; }
   .btn-bg {
@@ -3118,7 +3134,7 @@ h2 {
     -webkit-background-size: auto 110vh;
             background-size: auto 110vh; }
     #main .row h1 {
-      font-size: 6vw;
+      font-size: 5.8vw;
       margin-bottom: 20%; }
   #app-features h2 {
     font-size: 22px; }
@@ -3128,18 +3144,27 @@ h2 {
     height: 116px; }
   #app-features .owl-carousel .item img {
     width: 155px; }
-  #app-features .more .more-title {
-    font-size: 18px;
-    margin-bottom: 10px; }
+  #app-features .owl-carousel .owl-nav {
+    left: 15px;
+    right: 15px; }
+  #app-features .more {
+    margin-top: -20px; }
+    #app-features .more .more-title {
+      font-size: 16px;
+      margin-bottom: 10px; }
   #includes h2 {
     margin-bottom: 20px;
     font-size: 22px; }
+  #includes .apps-title {
+    font-size: 14px; }
+    #includes .apps-title .text-right {
+      padding-left: 0; }
   #includes .apps {
     margin-top: 10px;
     height: 400px; }
     #includes .apps:before {
       right: auto;
-      left: 0;
+      left: 3px;
       width: 830px; }
   #includes .try-title {
     font-size: 18px;
