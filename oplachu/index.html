@@ -37,27 +37,36 @@
 			<div class=" header row align-items-center justify-content-between">
 				<div class="col-auto">
 					<a href="/" class="logo">
-						<img src="img/logo.png" alt="oplachu">
+						<img src="img/logo.svg" alt="oplachu">
 					</a>
 				</div>
-				<nav class="col">
-					<ul class="menu d-flex justify-content-around">
+				<nav class="col-auto col-lg">
+					<div class="burger-menu m-burger">
+						<div class="burger"></div>
+					</div>
+	 				<div class="overlay m-overlay"></div>
+	 				<div class="menu-wrap m-nav">
+					<ul class="menu align-items-lg-center justify-content-lg-around">
 						<li><a href="#app-features">Возможности</a></li>
 						<li><a href="">Как это работает?</a></li>
 						<li><a href="">Стоимость</a></li>
 						<li><a href="">Справка</a></li>
+						<li>
+							<a href="" class="btn-bg">Авторизоваться</a>
+						</li>
 					</ul>
+					</div>
 				</nav>
-				<div class="col-auto">
+<!-- 				<div class="col-auto">
 					<a href="" class="btn-bg">Авторизоваться</a>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</header>
 	<section id="main">
 		<div class="container">
 			<div class="row align-items-center">
-				<div class="col-7">
+				<div class="col-8 col-xl-7">
 					<h1>
 						Бесплатное<br>
 						мобильное приложение<br>
@@ -74,8 +83,8 @@
 	<section id="app-features">
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="col col-xl-10">
-					<h2>Возможности <span class="text-app">приложения</span></h2>
+				<div class="slides col-xl-10 row flex-column justify-content-around">
+					<h2>Возможности приложения</h2>
 					<div class="owl-carousel owl-theme">
 					    <div class="item">
 					    	<h4 class="odd">Сбор показаний приборов учета</h4>
@@ -107,6 +116,47 @@
 							Узнать о возможностях подробней
 						</div>
 						<a href="" class="btn-no-bg">Заказать презентацию</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="includes">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="apps-wrap col-xl-11 row flex-column justify-content-around">
+					<div class="row justify-content-center">
+						<div class="col-lg-10 col-xl-9 align-self-center">
+							<h2>Сервис «Оплачу ЖКХ» включает:</h2>
+						</div>
+					</div>
+					<div class="row apps-title justify-content-between">
+						<div class="col-lg-auto col-md-5 col-5">
+							Мобильное приложение<br> для абонентов
+						</div>
+						<div class="col-lg-auto col-md-6 col-7 text-right">
+							Сайт для управляющих организаций, где<br> осуществляется взаимодействие с жильцами
+						</div>
+					</div>
+					<div class="row apps">
+						<div class="col-auto align-self-end icons-apps">
+							<a href="https://itunes.apple.com/us/app/оплачу-жкх/id1213378201?l=ru&ls=1&mt=8" target="_blank">
+								<img src="img/app-store.svg" alt="">
+							</a>
+							<a href="https://play.google.com/store/apps/details?id=com.oplachu.app" target="_blank">
+								<img src="img/google-play.svg" alt="">
+							</a>
+						</div>
+						<div class="col-auto bg-apps"></div>
+					</div>
+					<div class="row try-wr">
+						<div class="col text-center">
+							<div class="try-title">
+								Попробуйте как это работает. Бесплатно.
+							</div>
+							<a href="" class="btn-bg">Попробовать</a>
+						</div>
 					</div>
 				</div>
 			</div>
