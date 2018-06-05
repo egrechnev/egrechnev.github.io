@@ -1,0 +1,119 @@
+@import "vars";
+
+// @mixin screen_max_1024
+// {
+//  @media screen and (max-width: 1024px) { @content; }
+// }
+
+// @mixin screen_min_1280
+// {
+//  @media screen and (max-width: 1280px) { @content; }
+// }
+
+// @mixin screen_min_1440
+// {
+//  @media screen and (max-width: 1280px) { @content; }
+// }
+
+// @function px-to-rem($px){
+//       @return ($px/16) + rem;
+// }
+
+// @mixin font-size($font_px)
+// {
+//      font-size: $font_px + px;
+//      font-size: px-to-rem($font_px);
+
+//      $line_h: $font_px * 1,2;
+
+//      line-height: $line_h + px;
+//      line-height: px-to-rem($line_h);
+// }
+
+html{
+// 	font-size: 100%;
+// 	@include screen_max_1024() { font-size: 90%; }
+// 	@include screen_min_1280() { font-size: 115%; }
+// 	@include screen_min_1440() { font-size: 125%; }
+}
+
+::placeholder{
+	color: #999!important;
+}
+
+::selection{
+	background-color: $accent;
+	color: #fff;
+}
+
+.pr27{
+	padding-right: 17px;
+}
+
+*::-webkit-input-placeholder{
+	color: #666;
+	opacity: 1;
+}
+
+*:-moz-placeholder{
+	color: #666;
+	opacity: 1;
+}
+
+*::-moz-placeholder{
+	color: #666;
+	opacity: 1;
+}
+
+*:-ms-input-placeholder{
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid{
+	color: #666;
+}
+body input:required:valid,
+body textarea:required:valid{
+	color: #666;
+}
+
+body{
+	font-size: 16px;
+	// @include font-size(16);
+	color: $text-dark;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	font-family: $font-default;
+	overflow-x: hidden;
+	letter-spacing: 1px;
+	margin: 0;
+	// background: $bg-body;
+}
+
+img{
+	// display: block;
+	// max-width: 100%;
+	// height: auto;
+	width: 100%;
+}
+
+a{
+	text-decoration: none;
+}
+
+p{
+	margin: 15px 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.text-center{
+	text-align: center;
+}
