@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.586 34.586">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #26a300;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <g id="symbol" transform="translate(0 0)">
+    <circle id="Ellipse_596" data-name="Ellipse 596" class="cls-1" cx="17.293" cy="17.293" r="17.293"/>
+    <path id="Path_1728" data-name="Path 1728" class="cls-2" d="M1.32.981l7.256,9.312L21.529-2.334" transform="translate(6.405 13.37)"/>
+  </g>
+</svg>
