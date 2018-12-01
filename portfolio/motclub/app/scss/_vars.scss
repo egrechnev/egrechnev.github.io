@@ -1,0 +1,24 @@
+$default-font: "Lato", sans-serif;
+$accent: #ce0000;
+$text: #fff;
+$body: #1b1b1b;
+$text-footer: #858585;
+$navbar: rgba(0, 0, 0, .5);
+$sidenav: rgba(255, 255, 255, .6);
+$slideback: rgba(0, 0, 0, .8);
+
+$btn-hover: #b71c1c;
+
+// Media Query Ranges
+$small-screen-up: 601px !default;
+$medium-screen-up: 993px !default;
+$large-screen-up: 1201px !default;
+$small-screen: 600px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
+
+//Materialize
+$num-cols: 12 !default;
+$gutter-width: 1.5rem !default;
+$element-top-margin: $gutter-width/3 !default;
+$element-bottom-margin: ($gutter-width*2)/3 !default;
