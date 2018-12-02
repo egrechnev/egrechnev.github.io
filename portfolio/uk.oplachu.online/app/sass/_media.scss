@@ -1,0 +1,1239 @@
+@import 'vars';
+
+@media only screen and (max-width: 1600px){
+    .btn{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 46px;
+
+        width: 228px;
+    }
+    .btn-bg{
+        color: $light;
+        border: 2px solid $accent;
+        background-color: $accent;
+        &:hover{
+            text-decoration: none;
+
+            color: $accent;
+            border: 2px solid $accent;
+            background-color: transparent;
+        }
+    }
+
+    .btn-no-bg{
+        color: $accent;
+        border: 2px solid $accent;
+        background-color: transparent;
+        &:hover{
+            text-decoration: none;
+
+            color: $light;
+            border: 2px solid $accent;
+            background-color: $accent;
+        }
+    }
+    h2{
+        font-size: 32px;
+    }
+
+    body{
+        padding-top: 80px;
+    }
+
+    /* Header
+	 * =============================== */
+
+    #header{
+        height: 80px;
+    }
+
+
+    /* Main
+	 * =============================== */
+
+    #main{
+        background-position: 56% 100%;
+        .row{
+            min-height: calc(100vh - 80px);
+            font-size: 32px;
+            h1{
+                font-size: 32px;
+            }
+        }
+    }
+
+
+    /* App-Features
+	 * =============================== */
+
+    #app-features{
+        .row{
+            min-height: initial;
+            .slides{
+                max-width: 700px;
+                padding: 70px 0 40px 0;
+                h2{
+                    margin-bottom: 20px;
+                }
+                .owl-carousel{
+                    .owl-stage-outer{
+                        .item{
+                            h4{
+                                font-size: 14px;
+                                font-weight: 400;
+
+                                width: 150px;
+                                height: 102px;
+                            }
+                            img{
+                                width: 150px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .more{
+            margin-top: 0;
+            .more-title{
+                font-size: 20px;
+
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+
+    /* Service-Includes
+	 * =============================== */
+
+    #service-includes{
+        .apps-title{
+            font-size: 20px;
+            font-weight: 300;
+
+            max-width: 909px;
+        }
+        .apps-wrap{
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        .apps{
+            height: 270px;
+            margin-top: 0;
+            &:before{
+                bottom: 0;
+                left: 145px;
+
+                width: 110px;
+            }
+            &:after{
+                position: absolute;
+                right: 0;
+
+                width: 500px;
+                height: inherit;
+
+                content: '';
+
+                background-position-y: -25px;
+            }
+            .icons-apps{
+                margin-bottom: 5px;
+                a{
+                    width: 120px;
+                }
+            }
+        }
+        .try-title{
+            font-size: 20px;
+            font-weight: 300;
+
+            margin-bottom: 20px;
+        }
+    }
+
+
+    /* How-It-Works
+	 * =============================== */
+
+    #how-it-works{
+        .how-it-works-wr{
+            padding: 70px 0 40px 0;
+        }
+        h2{
+            margin-bottom: 0;
+        }
+        .hiw-block{
+            font-size: 18px;
+            line-height: 32px;
+
+            height: 292px;
+            padding: 50px 10px 10px 10px;
+            .number{
+                font-size: 24px;
+                line-height: 40px;
+
+                top: -10px;
+
+                width: 40px;
+            }
+            .hiw-info{
+                font-size: 16px;
+                line-height: 24px;
+
+                bottom: -90px;
+            }
+            .hiw-info-last{
+                width: 445px;
+            }
+        }
+        .more{
+            .more-title{
+                font-size: 20px;
+
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+
+    /* Cost
+	 * =============================== */
+
+    #cost{
+        font-size: 20px;
+        line-height: 34px;
+        .row{
+            h2{
+                margin-bottom: 35px;
+
+                text-align: left;
+            }
+            h3{
+                font-size: 20px;
+
+                margin: 30px 0;
+            }
+        }
+    }
+
+
+    /* Logo-Org
+	 * =============================== */
+    #logo-org{
+        background-color: $bg-pages;
+        .mobile-title-logo-org{
+            display: none;
+        }
+        .logo-org{
+            font-size: 20px;
+            font-weight: 700;
+
+            position: relative;
+
+            height: 540px;
+
+            text-transform: uppercase;
+
+            .logo-org-color{
+                position: absolute;
+                top: 82px;
+                left: 300px;
+            }
+            .logo-org-logo{
+                position: absolute;
+                top: 271px;
+                left: 285px;
+            }
+        }
+        .logo-org-info{
+            h2{
+                font-size: 29px;
+            }
+            .logo-org-text{
+                font-size: 18px;
+                line-height: 28px;
+                padding-right: 0;
+            }
+        }
+    }
+
+
+    /* Benefit
+	 * =============================== */
+
+    #benefit{
+        h3{
+            font-size: 24px;
+        }
+        .benefit-block{
+            padding: 12px;
+            p{
+                font-size: 17px;
+                line-height: 22px;
+
+                padding: 40px 20px 25px 30px;
+            }
+        }
+        .orange{
+            p{
+                &:after{
+                    left: 35px;
+                }
+            }
+        }
+        .green{
+            p{
+                &:after{
+                    left: 35px;
+                }
+            }
+        }
+    }
+
+
+    /* Modern-tech
+	 * =============================== */
+
+    #modern-tech{
+        .modern-tech-wr{
+            height: 280px;
+        }
+        p{
+            font-size: 20px;
+            line-height: 30px;
+
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1600px){
+    .container{
+        max-width: 950px;
+    }
+    #header{
+        .container{
+            max-width: 1140px;
+        }
+    }
+    #footer{
+        .container{
+            max-width: 1140px;
+        }
+    }
+    #modern-tech{
+        .modern-tech-img{
+            height: 342px;
+        }
+    }
+
+    /* Logo-Org
+     * =============================== */
+    #logo-org{
+        .logo-org-info{
+            padding-left: 0;
+        }
+    }
+
+}
+
+@media (min-width: 1400px) and (max-width: 1600px){
+    /* App-Features
+	 * =============================== */
+
+    #app-features{
+        .row{
+            .slides{
+                .owl-carousel{
+                    .owl-stage-outer{
+                        .item{
+                            img{
+                                width: 180px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    /* Service-Includes
+	 * =============================== */
+
+    #service-includes{
+        .apps{
+            height: 380px;
+            &:after{
+                position: absolute;
+                right: -23px;
+
+                width: 705px;
+                height: inherit;
+
+                content: '';
+
+                background-position-y: -25px;
+            }
+        }
+    }
+}
+
+//Extra large: ≥1200px
+// @include media-breakpoint-down(xl){
+// }
+
+//Large: ≥992px
+// @include media-breakpoint-down(lg){
+// }
+
+@media (max-width: 1199.98px) {
+
+    /* Header
+	 * =============================== */
+
+    .header{
+        nav{
+            ul.menu{
+                li{
+                    a,
+                    .help{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    /* App-Features
+	 * =============================== */
+
+    #app-features{
+        .owl-carousel{
+            .owl-stage-outer{
+                .item{
+                    img{
+                        width: 190px;
+                    }
+                }
+            }
+        }
+        .more{
+            .more-title{
+                font-size: 18px;
+            }
+        }
+    }
+
+
+    /* Service-Includes
+	 * =============================== */
+
+    #service-includes{
+        h2{
+            padding: 10px 20px;
+        }
+        .apps{
+            &:before{
+                right: -65px;
+            }
+        }
+    }
+}
+
+//Medium: ≥768px
+// @include media-breakpoint-down(md){
+// }
+
+@media (max-width: 991.98px) {
+
+    /* Header
+	 * =============================== */
+
+    #header{
+        .container{
+            position: relative;
+        }
+
+        .header{
+            nav{
+                position: initial;
+
+                height: 40px;
+                .burger-menu{
+                    position: relative;
+
+                    display: inline-block;
+
+                    width: 42px;
+                    height: 42px;
+
+                    cursor: pointer;
+                    .burger{
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+
+                        width: 100%;
+                        height: 6px;
+                        margin-top: -5px;
+
+                        transition: all .3s ease-in-out;
+
+                        opacity: 1;
+                        background: $burger-menu;
+                        &:before{
+                            position: absolute;
+                            top: 12px;
+
+                            display: block;
+
+                            width: 42px;
+                            height: 6px;
+
+                            content: '';
+                            transition: all .3s ease-in-out;
+
+                            background: $burger-menu;
+                        }
+                        &:after{
+                            position: absolute;
+                            bottom: 12px;
+
+                            display: block;
+
+                            width: 42px;
+                            height: 6px;
+
+                            content: '';
+                            transition: all .3s ease-in-out;
+
+                            background: $burger-menu;
+                        }
+                    }
+                    &.menu-open{
+                        .burger{
+                            background: $burger-menu-tr;
+                            &:after{
+                                bottom: 0;
+
+                                transform: rotate(-45deg);
+                            }
+                            &:before{
+                                top: 0;
+
+                                transform: rotate(45deg);
+                            }
+                        }
+                    }
+                }
+                .menu-wrap{
+                    position: absolute;
+                    z-index: 10;
+                    top: 80px;
+                    right: 0;
+                    left: 0;
+
+                    display: none;
+                    overflow-y: auto;
+
+                    width: 100%;
+                    height: 100vh;
+                    ul.menu{
+                        position: absolute;
+                        z-index: 999;
+                        top: 0;
+                        right: 0;
+                        left: 0;
+
+                        display: block;
+
+                        padding: 70px 0 140px 100px;
+
+                        background: $light;
+                        box-shadow: 0 40px 40px -40px #aaa inset,
+                        0 6px 20px -6px #666;
+                        li{
+                            display: block;
+                            a,
+                            .help{
+                                font-size: 24px;
+
+                                margin-bottom: 40px;
+                                &:after{
+                                    bottom: -2px;
+                                }
+                            }
+                            .btn-bg{
+                                font-size: 20px;
+                                line-height: 46px;
+
+                                width: 244px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Main
+	 * =============================== */
+
+    #main{
+        background-position: 56% 100%;
+        background-size: auto 110vh;
+        .row{
+            font-size: 34px;
+            h1{
+                font-size: 34px;
+            }
+            .btn{
+                margin-top: 20%;
+            }
+        }
+    }
+
+
+    /* Service-Includes
+	 * =============================== */
+
+    #service-includes{
+        .apps-title{
+            font-size: 18px;
+            line-height: inherit;
+            br{
+                display: none;
+            }
+        }
+        .apps{
+            height: 337px;
+            margin-top: 0;
+
+            &:before{
+                bottom: 13px;
+                left: 7px;
+
+                width: 110px;
+
+                background: url(../img/app_m.png) bottom no-repeat;
+                background-size: 100%;
+            }
+            &:after{
+                position: absolute;
+                right: -55px;
+
+                width: 600px;
+                height: inherit;
+
+                content: '';
+
+                background: url(../img/app_d.png) no-repeat;
+                background-position-y: -25px;
+                background-size: 100%;
+            }
+
+            .icons-apps{
+                position: absolute;
+                top: 10px;
+            }
+        }
+        .try-title{
+            margin-bottom: 15px;
+        }
+    }
+
+
+    /* How-It-Works
+	 * =============================== */
+
+    #how-it-works{
+        .hiw-block{
+            padding: 50px 15px 20px 15px;
+            .hiw-info-last{
+                width: 625px;
+            }
+            .hiw-text{
+                padding: 0 32px 50px 32px;
+            }
+        }
+    }
+
+
+    /* Cost
+	 * =============================== */
+
+    #cost{
+        font-size: 16px;
+        line-height: 24px;
+
+        background: none;
+        .bg-cost{
+            display: block;
+
+            min-height: 45vw;
+
+            background: url(../img/bg_cost.jpg) no-repeat;
+            background-position-x: 30%;
+            background-position-y: 40%;
+            background-size: 240%;
+        }
+        .row{
+            height: initial;
+            padding-bottom: 30px;
+            h2{
+                margin-top: 35px;
+                margin-bottom: 25px;
+
+                text-align: left;
+            }
+            h3{
+                font-size: 20px;
+
+                margin: 20px 0;
+            }
+        }
+    }
+
+
+    /* Logo-Org
+     * =============================== */
+    #logo-org{
+        padding: 30px 0;
+        .row{
+            height: auto;
+            max-height: initial;
+        }
+        .logo-org-info{
+            height: auto;
+            h2{
+                font-size: 20px;
+                line-height: 30px;
+            }
+            .logo-org-text{
+                font-size: 16px;
+                line-height: 28px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+
+    /* Benefit
+	 * =============================== */
+
+    #benefit{
+        .benefit-block{
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+
+
+    /* Modern-tech
+	 * =============================== */
+
+    #modern-tech{
+        .modern-tech-wr{
+            height: 250px;
+        }
+        h2{
+            font-size: 28px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 26px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        .modern-tech-img{
+            height: 255px;
+        }
+    }
+}
+
+//Small: ≥576px
+// @include media-breakpoint-down(sm){
+// }
+
+@media (max-width: 767.98px) {
+
+    /* Main
+	 * =============================== */
+
+    #main{
+        .row{
+            font-size: 28px;
+            h1{
+                font-size: 28px;
+            }
+        }
+    }
+
+
+    /* Service-Includes
+	 * =============================== */
+
+    #service-includes{
+        .apps-title{
+            font-size: 16px;
+            br{
+                display: none;
+            }
+        }
+        h2{
+            font-size: 28px;
+        }
+        .apps{
+            &:after{
+                right: -190px;
+            }
+        }
+    }
+
+
+    /* How-It-Works
+	 * =============================== */
+
+    #how-it-works{
+        .hiw-block{
+            .hiw-info{
+                font-size: 16px;
+            }
+            .hiw-info-last{
+                left: 25px;
+
+                width: 253px;
+            }
+        }
+        .icon-tel{
+            margin: 25px auto 40px auto;
+        }
+    }
+
+
+    /* Cost
+	 * =============================== */
+
+    #cost{
+        background: none;
+        .bg-cost{
+            min-height: 60vw;
+
+            background: url(../img/bg_cost.jpg) no-repeat;
+            background-position-x: 38%;
+            background-position-y: 40%;
+            background-size: 300%;
+        }
+    }
+
+    /* Logo-Org
+	 * =============================== */
+
+    #logo-org{
+        .mobile-title-logo-org{
+            font-size: 21px;
+
+            display: block;
+        }
+        .logo-org{
+            font-size: 14px;
+            font-weight: 500;
+
+            height: 320px;
+            margin: 30px 0;
+
+            background-position: center;
+            background-size: contain;
+            .logo-org-color{
+                position: absolute;
+                top: 42px;
+                left: 314px;
+            }
+            .logo-org-logo{
+                position: absolute;
+                top: 155px;
+                left: 303px;
+            }
+        }
+        .logo-org-info{
+            height: auto;
+
+            text-align: center;
+            h2{
+                display: none;
+            }
+            .logo-org-text{
+                font-size: 16px;
+
+                text-align: center;
+            }
+        }
+    }
+
+
+    /* Modern-tech
+	 * =============================== */
+
+    #modern-tech{
+        .modern-tech-wr{
+            height: auto;
+        }
+        h2{
+            font-size: 28px;
+            margin-bottom: auto;
+            text-align: center;
+        }
+        p{
+            font-size: 16px;
+            line-height: 26px;
+
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        .btn{
+            margin: 0 auto;
+            display: inherit;
+        }
+        .modern-tech-img{
+            height: 332px;
+        }
+    }
+}
+
+//Extra small: >0
+// @include media-breakpoint-down(xs){
+// }
+
+@media (max-width: 575.98px) {
+
+    .modal-terms{
+        .modal-terms-close{
+            text-align: center;
+        }
+    }
+
+    .container{
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    h2{
+        font-size: 22px;
+    }
+    .btn-bg{
+        font-size: 16px;
+
+        width: 90%;
+        max-width: 200px;
+    }
+
+    .modal-body{
+        .btn{
+            width: 100%;
+            max-width: initial;
+        }
+    }
+
+    /* Header
+	 * =============================== */
+
+    #header{
+        .container{
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+
+
+        .header{
+            .logo-wr{
+                margin-right: 0;
+            }
+            .logo{
+                img{
+                    width: 170px;
+                }
+            }
+            nav{
+                .menu-wrap{
+                    ul.menu{
+                        margin: 0 15px;
+                        padding: 14% 0 10% 18%;
+                        li{
+                            .btn-bg{
+                                min-width: 200px;
+                            }
+                            a,
+                            .help{
+                                margin-bottom: 10%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Main
+	 * =============================== */
+
+    #main{
+        .row{
+            font-size: 5.8vw;
+            h1{
+                font-size: 5.8vw;
+            }
+        }
+    }
+
+
+    /* App-Features
+	 * =============================== */
+
+    #app-features{
+        h2{
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+        .owl-carousel{
+            .owl-stage-outer{
+                .item{
+                    h4{
+                        font-size: 16px;
+
+                        width: 175px;
+                        height: 116px;
+                    }
+                    img{
+                        width: 155px;
+                    }
+                }
+            }
+            .owl-nav{
+                right: 15px;
+                left: 15px;
+            }
+        }
+        .more{
+            .more-title{
+                font-size: 16px;
+
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+
+    /* Service-Includes
+	 * =============================== */
+
+    #service-includes{
+        h2{
+            font-size: 20px;
+
+            margin-bottom: 20px;
+        }
+        .apps-title{
+            font-size: 14px;
+            .text-right{
+                padding-left: 0;
+            }
+        }
+        .apps{
+            height: 321px;
+            margin-top: 0;
+
+            &:before{
+                bottom: -2px;
+                left: 7px;
+
+                width: 110px;
+
+                background: url(../img/app_m.png) bottom no-repeat;
+                background-size: 100%;
+            }
+            &:after{
+                position: absolute;
+                right: auto;
+                left: 65px;
+
+                width: 600px;
+                height: inherit;
+
+                content: '';
+
+                background: url(../img/app_d.png) no-repeat;
+                background-position-y: -25px;
+                background-size: 100%;
+            }
+
+            .icons-apps{
+                position: absolute;
+                top: 10px;
+            }
+        }
+        .try-title{
+            font-size: 16px;
+
+            margin-bottom: 5px;
+        }
+    }
+
+
+    /* How-It-Works
+	 * =============================== */
+
+    #how-it-works{
+        .more{
+            .more-title{
+                font-size: 18px;
+            }
+        }
+    }
+
+
+    /* Cost
+	 * =============================== */
+
+    #cost{
+        background: none;
+        .bg-cost{
+            background-position-x: 42%;
+            background-position-y: 38%;
+            background-size: 350%;
+        }
+        .row{
+            h2{
+                font-size: 24px;
+            }
+            h3{
+                font-size: 18px;
+
+                margin: 20px 0;
+            }
+        }
+    }
+
+    /* Logo-Org
+	 * =============================== */
+
+    #logo-org{
+        .mobile-title-logo-org{
+            font-size: 20px;
+        }
+        .logo-org{
+            font-size: 12px;
+
+            width: 210px;
+            height: 270px;
+            margin: 30px auto;
+            .logo-org-color{
+                position: absolute;
+                top: 35px;
+                left: 155px;
+            }
+            .logo-org-logo{
+                position: absolute;
+                top: 128px;
+                left: 145px;
+            }
+        }
+        .logo-org-info{
+            .logo-org-text{
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+
+
+    /* Benefit
+	 * =============================== */
+
+    #benefit{
+        .benefit-wrap{
+            padding-top: 30px;
+            padding-bottom: 18px;
+        }
+        h2{
+            padding: 15px 20px;
+        }
+        h3{
+            font-size: 20px;
+
+            margin: 40px 0 20px 0;
+        }
+    }
+
+
+    /* Modern-tech
+	 * =============================== */
+
+    #modern-tech{
+        .row{
+            padding-top: 20px;
+            height: auto;
+        }
+        .modern-tech-wr{
+            height: auto;
+
+            text-align: center;
+        }
+        h2{
+            font-size: 28px;
+
+            text-align: center;
+        }
+        p{
+            font-size: 16px;
+            line-height: 26px;
+
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        .modern-tech-img{
+            height: auto;
+            background: none;
+        }
+        .modern-tech-img-mobile{
+            background: url(../img/modern_tech.png) $bg-pages no-repeat;
+            background-position-x: center;
+            background-position-y: 50%;
+            background-size: 110%;
+            height: 85vw;
+        }
+    }
+
+
+    /* Footer
+ * =============================== */
+
+    #footer{
+        .footer{
+            padding: 38px 0 0 0;
+            & > div{
+                margin-bottom: 20px;
+                margin-left: 4vw;
+            }
+            .copyright{
+                margin: 8px 0 10px 0;
+            }
+
+            .footer-apps{
+                width: 100%;
+                max-width: 270px;
+                a{
+                    width: 125px;
+                }
+            }
+        }
+    }
+
+    .up{
+        display: block;
+    }
+}
