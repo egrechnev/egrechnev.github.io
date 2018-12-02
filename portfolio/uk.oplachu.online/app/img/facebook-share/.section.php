@@ -1,3 +1,0 @@
-<?
-$sSectionName="facebook_share";
-?>

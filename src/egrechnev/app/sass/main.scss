@@ -59,6 +59,9 @@
 		.skill-opencart {
 			width: 140px;
 		}
+		.skill-materialize {
+			width: 120px;
+		}
 		.skill-advantshop{
 			width: 200px;
 		}
@@ -387,14 +390,22 @@
 		width: 100%;
 	}
 	.descr_wrap {
+		margin-bottom: 30px;
 		.descr {
 			text-transform: none;
-			margin-bottom: 30px;
+			margin-bottom: 5px;
 			letter-spacing: 2px;
 			font-size: 15px;
+			display: block;
+			&:last-child{
+				margin-bottom: 0;
+			}
 			a {
 				color: $text-dark;
 				letter-spacing: 1px;
+				&:hover{
+					text-decoration: underline;
+				}
 			}
 		}
 	}
