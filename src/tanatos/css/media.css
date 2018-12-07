@@ -1,0 +1,46 @@
+@media screen and (max-width: 1000px) {
+    #newsletter .form>[type="text"] {
+        font-size: 16px;
+        padding: 0 8px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #newsletter .form>[type="text"] {
+        font-size: 14px;
+        padding: 0 8px;
+        text-align: center;
+        min-width: 270px;
+    }
+    #reviews {
+        padding: 0 30px;
+        mix-width: 260px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    #newsletter .form>[type="text"] {
+        margin: 0;
+        width: 270px;
+    }
+    #newsletter .form>[type="submit"] {
+        width: 270px;
+        margin: 10px 0 0 0;
+    }
+    #reviews {
+        padding: 0 20px;
+        min-width: 280px;
+    }
+
+    #contacts .row-2{
+        max-width: 90%;
+    }
+    #contacts .row-2 .form>.social>a{
+        margin-right: 10px;
+    }
+    footer .content.flex{
+        padding: 2px 85px 0 85px;
+    }
+}

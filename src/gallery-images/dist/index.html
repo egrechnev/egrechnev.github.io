@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>gallery images</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+
+	<meta name="theme-color" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="load-img">
+			<div class="load-img__title">Введите URL до набора картинок в формате JSON:</div>
+
+			<input class="load-img__url" id="urlJson" type="text" autocomplete="off" value="https://egrechnev.github.io/gallery-images/gallery-img.json">
+
+			<button class="load-img__btn" id="btnJson">Загрузить</button>
+
+			<div class="load-img__error" id="errorJson"></div>
+		</div>
+
+		<div id="galleryImages"></div>
+	</div>
+
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

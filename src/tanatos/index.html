@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tanatos</title>
+
+   <!-- Header Styles (compress & paste to <style> after release) -->
+    <!-- <link rel="stylesheet" href="header.css"> -->
+
+    <!-- Header CSS (first screen styles from header.min.css) -->
+    <style>@font-face{font-family:'Open Sans';font-style:normal;font-weight:300;src:local('Open Sans Light'),local('OpenSans-Light'),url(fonts/OpenSans/open-sans-v15-latin_cyrillic-300.woff2) format('woff2'),url(fonts/OpenSans/open-sans-v15-latin_cyrillic-300.woff) format('woff')}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local('Open Sans Regular'),local('OpenSans-Regular'),url(fonts/OpenSans/open-sans-v15-latin_cyrillic-regular.woff2) format('woff2'),url(fonts/OpenSans/open-sans-v15-latin_cyrillic-regular.woff) format('woff')}@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;src:local('Open Sans SemiBold'),local('OpenSans-SemiBold'),url(fonts/OpenSans/open-sans-v15-latin_cyrillic-600.woff2) format('woff2'),url(fonts/OpenSans/open-sans-v15-latin_cyrillic-600.woff) format('woff')}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;src:local('Open Sans Bold'),local('OpenSans-Bold'),url(fonts/OpenSans/open-sans-v15-latin_cyrillic-700.woff2) format('woff2'),url(fonts/OpenSans/open-sans-v15-latin_cyrillic-700.woff) format('woff')}@font-face{font-family:'Open Sans';font-style:normal;font-weight:800;src:local('Open Sans ExtraBold'),local('OpenSans-ExtraBold'),url(fonts/OpenSans/open-sans-v15-cyrillic_latin-800.woff2) format('woff2'),url(fonts/OpenSans/open-sans-v15-cyrillic_latin-800.woff) format('woff')}@font-face{font-family:icons;src:url(fonts/icons/icons.eot?10655190);src:url(fonts/icons/icons.eot?10655190#iefix) format('embedded-opentype'),url(fonts/icons/icons.woff?10655190) format('woff'),url(fonts/icons/icons.ttf?10655190) format('truetype'),url(fonts/icons/icons.svg?10655190#icons) format('svg');font-weight:400;font-style:normal}html{box-sizing:border-box}*,:after,:before{box-sizing:inherit}body{margin:0;padding:0;font-family:"Open Sans";color:#3b434c;font-size:16px;min-width:320px}a{text-decoration:none}ul{list-style:none}.clear{width:0;height:0;display:block;position:relative;clear:both}.flex{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.orange{color:#f7600e}.hidden,.hidden-more{display:none}.content{position:relative;max-width:1140px;margin:0 auto}.menu-list{font-family:icons;font-style:normal;font-weight:400;font-size:20px;color:#fff;display:inline-block;text-decoration:none;width:auto;margin-right:0;text-align:center;line-height:1em;margin-left:16px}header nav{padding-right:20px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}header nav .menu-text{color:#fff;display:inline-block;font-size:20px}.menu-link{color:#fff;font-size:20px;position:absolute;top:-4px;left:-69px;display:none}.up{font-family:icons;width:50px;height:50px;position:fixed;right:26px;bottom:16px;background-color:#3b434c;border:1px solid rgba(255,255,255,.2);color:#fff;font-size:23px;text-align:center;line-height:48px;border-radius:10px;display:none;cursor:pointer;opacity:.9;-webkit-transition:background .3s ease;transition:background .3s ease}.up:hover{background-color:#f7600e;border:1px solid #f7600e}#contacts,#header-section,#newsletter,#our-team,#our-works,#services,footer{min-width:320px}.burger-menu{position:relative;width:26px;height:20px;cursor:pointer;display:inline-block;margin-left:16px}.burger{position:absolute;background:#fff;width:100%;height:2px;top:50%;right:0;margin-top:0;opacity:1}.burger::before{position:absolute;background:#fff;width:26px;height:2px;top:9px;content:"";display:block}.burger::after{position:absolute;background:#fff;width:26px;height:2px;bottom:9px;content:"";display:block}.burger,.burger::after,.burger::before{transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out}.burger-menu.menu-on .burger::after{transform:rotate(-45deg);-webkit-transform:rotate(-45deg);bottom:0}.burger-menu.menu-on .burger::before{transform:rotate(45deg);-webkit-transform:rotate(45deg);top:0}.burger-menu.menu-on .burger,.m.menu-on .burger{background:rgba(255,255,255,0)}@-webkit-keyframes menu-active-slide{0%{-webkit-transform:translateX(-10px);transform:translateX(-10px)}100%{-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes menu-active-slide{0%{-webkit-transform:translateX(-10px);transform:translateX(-10px)}100%{-webkit-transform:translateX(0);transform:translateX(0)}}.sub-menu{font-weight:300;font-size:1em;list-style-type:none;padding:10px 20px;min-width:200px;background:#434b52;background:-webkit-gradient(linear,left top,left bottom,from(#434b52),to(#363e45));background:linear-gradient(to bottom,#434b52 0,#363e45 100%);border:1px solid rgba(255,255,255,.2);margin:0;position:absolute;top:40px;right:2px;-webkit-transition:opacity .25s ease;transition:opacity .25s ease;opacity:0;cursor:auto}.sub-menu li{line-height:50px;border-bottom:1px solid rgba(255,255,255,.2);color:#fff;cursor:pointer}.sub-menu li:last-child{border-bottom:none}.sub-menu li:hover{color:rgba(255,255,255,.5)}.active .sub-menu{opacity:1;-webkit-transition:opacity .25s ease;transition:opacity .25s ease;-webkit-animation:menu-active-slide .25s;animation:menu-active-slide .25s}#header-section{background:url(images/bg-layer.png),url(images/bg-01.jpg) no-repeat center fixed;background-size:cover;-webkit-box-sizing:border-box;box-sizing:border-box}#header-section .content{min-height:inherit;-webkit-box-sizing:border-box;box-sizing:border-box;padding-top:50px;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;min-height:100vh;width:100%}#header-section header.flex{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}#logo{display:block;position:relative;width:158px;height:18px;background:url(images/logo.png) no-repeat center;background-size:contain;margin-left:20px}#header-section .text-header-block{text-align:center;margin:50px 0 40px 0}#header-section .text-header-block>.title-header{font-size:70px;font-weight:700;line-height:70px;color:#fff;margin-bottom:20px}#header-section .text-header-block>.title-text{color:#fff;font-size:25px;font-weight:400;line-height:40px;max-width:70%;margin:0 auto 50px auto}#header-section .text-header-block>.btns>span{display:inline-block;border:1px solid rgba(255,255,255,.2);border-radius:10px;color:#fff;font-size:16px;font-weight:600;line-height:50px;min-width:210px;text-transform:uppercase;-webkit-transition:all .3s ease;transition:all .3s ease;cursor:pointer;margin:0 12px 10px 12px}#header-section .text-header-block>.btns>span:hover{background-color:#f7600e;border-color:#f7600e;color:#fff}#header-section .more{text-align:center;margin-bottom:50px}#header-section .more>span{display:inline-block;width:34px;height:34px;background:url(images/more.png) no-repeat;opacity:.5;-webkit-transition:opacity .3s ease;transition:opacity .3s ease;cursor:pointer}#header-section .more>span:hover{opacity:1}@media screen and (max-width:1000px){#header-section .text-header-block>.title-header{font-size:55px;line-height:55px}#header-section .text-header-block>.title-text{font-size:20px;line-height:30px}}@media screen and (max-width:600px){#header-section .text-header-block>.title-header{font-size:38px;line-height:38px}#header-section .text-header-block>.title-text{font-size:18px;line-height:30px;max-width:90%}}@media screen and (max-width:400px){#header-section .text-header-block>.title-header{font-size:31px;line-height:31px}#header-section .text-header-block>.title-text{font-size:16px;line-height:26px}}</style>
+</head>
+
+<body>
+    <section id="header-section" class="flex">
+        <div class="content flex">
+            <header class="flex">
+                <a href="index.html" id="logo"></a>
+                <nav><span class="menu-text">Menu</span>
+                    <div class="burger-menu">
+                        <div class="burger"></div>
+                        <ul class="sub-menu">
+                        <li class="link-to-services">Services</li>
+                        <li class="link-to-our-works">Our Works</li>
+                        <li class="link-to-hire-us">Our Team</li>
+                        <li class="link-to-reviews">Reviews</li>
+                        <li class="link-to-say-hello">Say Hello</li>
+                    </ul>
+                    </div>
+                </nav>
+            </header>
+            <div class="text-header-block">
+                <div class="title-header">WE DESIGN <span class="orange">THINGS</span></div>
+                <div class="title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nihil quo, ipsum alias minus ratione necessitatibus, ipsa at obcaecati libero? Veritatis repellendus aliquam, eveniet. Voluptates nemo modi minus cumque porro?</div>
+                <div class="btns"><span class="hire-us">hire us</span>
+                    <span class="our-works">our works</span></div>
+            </div>
+            <div class="more"><span></span></div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="content">
+            <ul class="flex">
+                <li>
+                    <a href="#" data-fake-link>
+                        <span class="icon-printer"></span>
+                        <span class="title">PRINT DESIGN</span>
+                    </a>
+                    <div class="text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</div>
+                </li>
+                <li>
+                    <a href="#" data-fake-link>
+                        <span class="icon-web"></span>
+                        <span class="title">WEB DESIGN</span>
+                    </a>
+                    <div class="text">Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+                </li>
+                <li>
+                    <a href="#" data-fake-link>
+                        <span class="icon-app"></span>
+                        <span class="title">APP DESIGN</span>
+                    </a>
+                    <div class="text">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+                </li>
+                <li>
+                    <a href="#" data-fake-link>
+                        <span class="icon-logo-d"></span>
+                        <span class="title">LOGO DESIGN</span>
+                    </a>
+                    <div class="text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="newsletter">
+        <div class="content">
+            <form action="" method="post" name="form">
+                <div class="form flex">
+                    <input name="title" method="post" type="text" placeholder="Enter Your email adress for newsletter">
+                    <input name="submit" type="submit" value="SUBSCRIBE">
+                </div>
+            </form>
+        </div>
+    </section>
+    <section id="our-works" class="flex">
+        <div class="content flex">
+            <div class="row-1">
+                <div class="title-header">OUR <span class="orange">WORKS</span></div>
+                <div class="title-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+            </div>
+            <ul class="row-2 flex">
+                <li>
+                    <img class="img" src="images/ow-01.jpg" />
+                    <div class="hover">
+                        <div class="title">ABAZOO WEBSITE</div>
+                        <div class="text">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+                        <div class="btn"><a href="#" data-fake-link>show project</a></div>
+                    </div>
+                </li>
+                <li><img src="images/ow-02.jpg" />
+                    <div class="hover">
+                        <div class="title">ABAZOO WEBSITE</div>
+                        <div class="text">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+                        <div class="btn"><a href="#" data-fake-link>show project</a></div>
+                    </div>
+                </li>
+                <li><img src="images/ow-03.jpg" />
+                    <div class="hover">
+                        <div class="title">ABAZOO WEBSITE</div>
+                        <div class="text">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+                        <div class="btn"><a href="#" data-fake-link>show project</a></div>
+                    </div>
+                </li>
+                <li class="hidden-more"><img src="images/ow-04.jpg" />
+                    <div class="hover">
+                        <div class="title">ABAZOO WEBSITE</div>
+                        <div class="text">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+                        <div class="btn"><a href="#" data-fake-link>show project</a></div>
+                    </div>
+                </li>
+                <li class="hidden-more"><img src="images/ow-05.jpg" />
+                    <div class="hover">
+                        <div class="title">ABAZOO WEBSITE</div>
+                        <div class="text">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+                        <div class="btn"><a href="#" data-fake-link>show project</a></div>
+                    </div>
+                </li>
+                <li class="hidden-more"><img src="images/ow-06.jpg" />
+                    <div class="hover">
+                        <div class="title">ABAZOO WEBSITE</div>
+                        <div class="text">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+                        <div class="btn"><a href="#" data-fake-link>show project</a></div>
+                    </div>
+                </li>
+            </ul>
+            <div class="row-3">
+                <span class="btns show-more" onclick="this.style.display='none';">SHOW MORE</span>
+            </div>
+        </div>
+    </section>
+    <section id="reviews">
+        <div class="arrow">
+            <span class="arrow-left"></span>
+        </div>
+        <div class="review active flex">
+            <div class="content flex">
+                <div class="head">
+                    <img src="images/head.png" />
+                </div>
+                <div class="text">
+                    These guys are incredible! I get my project in 10 days and it was awesome! Very good service! Highly recommended!
+                </div>
+                <div class="name">
+                    John Smith
+                </div>
+            </div>
+        </div>
+        <div class="review hidden">
+            <div class="content flex">
+                <div class="head">
+                    <img src="images/head.png" />
+                </div>
+                <div class="text">
+                    These guys are incredible! I get my project in 10 days and it was awesome! Very good service! Highly recommended!
+                </div>
+                <div class="name">
+                    John Smith
+                </div>
+            </div>
+        </div>
+        <div class="review hidden">
+            <div class="content flex">
+                <div class="head">
+                    <img src="images/head.png" />
+                </div>
+                <div class="text">
+                    These guys are incredible! I get my project in 10 days and it was awesome! Very good service! Highly recommended!
+                </div>
+                <div class="name">
+                    John Smith
+                </div>
+            </div>
+        </div>
+        <div class="arrow">
+            <span class="arrow-right"></span>
+        </div>
+    </section>
+    <section id="our-team" class="flex">
+        <div class="content flex">
+            <div class="row-1">
+                <div class="title-header">our <span class="orange">team</span></div>
+                <div class="title-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem</div>
+            </div>
+            <ul class="row-2 flex">
+                <li><span class="photo"><span style="background-image:url(images/t-01.jpg);"></span></span>
+                    <div class="name">Catherina Gail</div>
+                    <div class="social">
+                        <a href="#" data-fake-link></a>
+                        <a href="#" data-fake-link></a>
+                        <a href="#" data-fake-link></a>
+                    </div>
+                    <div class="text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</div>
+                </li>
+                <li><span class="photo"><span style="background-image:url(images/t-02.jpg);"></span></span>
+                    <div class="name">Harvey Rube</div>
+                    <div class="social">
+                        <a href="#" data-fake-link></a>
+                        <a href="#" data-fake-link></a>
+                        <a href="#" data-fake-link></a>
+                    </div>
+                    <div class="text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut </div>
+                </li>
+                <li><span class="photo"><span style="background-image:url(images/t-03.jpg);"></span></span>
+                    <div class="name">Janet Pris</div>
+                    <div class="social">
+                        <a href="#" data-fake-link></a>
+                        <a href="#" data-fake-link></a>
+                        <a href="#" data-fake-link></a>
+                    </div>
+                    <div class="text">Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</div>
+                </li>
+                <li><span class="photo"><span style="background-image:url(images/t-04.jpg);"></span></span>
+                    <div class="name">Kevin Ward</div>
+                    <div class="social">
+                        <a href="#" data-fake-link></a>
+                        <a href="#" data-fake-link></a>
+                        <a href="#" data-fake-link></a>
+                    </div>
+                    <div class="text">Velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</div>
+                </li>
+            </ul>
+            <div class="row-3 flex">
+                <i><span></span></i>
+                <i class="active-our-team"><span></span></i>
+                <i><span></span></i>
+                <i><span></span></i>
+            </div>
+        </div>
+    </section>
+    <section id="contacts" class="flex">
+        <div class="content flex">
+            <div class="row-1">
+                <div class="title-header">say <span class="orange">hello</span></div>
+                <div class="title-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+            </div>
+            <div class="row-2">
+                <form action="" method="post">
+                    <div class="form flex">
+                        <input name="email" placeholder="Your Email" type="text" />
+                        <input name="subject" placeholder="Subject" type="text" />
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                        <input name="submit" type="submit" value="HIRE US" />
+                        <div class="social">
+                            <a href="#" data-fake-link></a>
+                            <a href="#" data-fake-link></a>
+                            <a href="#" data-fake-link></a>
+                            <a href="#" data-fake-link></a>
+                            <a href="#" data-fake-link></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="flex">
+        <div class="content flex">
+            <div>&copy; 2017 COPYRIGHT DS</div>
+            <a class="gre" target="_blank" href="http://egrechnev.ru">
+                <img src="images/eg.svg" alt="EG">
+            </a>
+        </div>
+    </footer>
+    <span class="up">&#xe801;</span>
+
+    <!-- css / js -->
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/media.min.css">
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins-scroll.js"></script>
+    <script src="js/custom.min.js"></script>
+</body>
+
+</html>

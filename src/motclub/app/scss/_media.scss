@@ -1,0 +1,322 @@
+@import "vars";
+
+
+/*==========  Mobile First  ==========*/
+
+  // ≥601
+  @media #{$medium-and-up} {
+    body{
+      font-size: 17px;
+    }
+
+    .social{
+      &__icon{
+        font-size: 23px;
+        margin-right: 25px;
+      }
+    }
+
+    .main{
+      &__title{
+        font-size: 30px;
+      }
+      &__slogan{
+        font-size: 60px;
+        margin: 10px 0;
+      }
+      &__text{
+        margin-bottom: 43px;
+      }
+    }
+
+    .about{
+      &__text{
+        font-size: 17px;
+      }
+    }
+
+    .offer{
+      &__title{
+        margin-top: 120px;
+        font-size: 34px;
+      }
+    }
+
+    .listings{
+      padding: 100px 0 90px 0;
+    }
+
+    .blog{
+      &__title{
+        margin-top: 80px;
+      }
+      &__btn{
+        margin: 40px 0 80px 0;
+      }
+
+      &__img-01{
+        min-height: auto!important;
+        height: auto;
+      }
+    }
+
+    .signup{
+      padding: 100px 0 90px 0;
+      &__title{
+        font-size: 40px;
+      }
+      &__text{
+        font-size: 17px;
+      }
+      &__form{
+        &--email{
+          font-size: 17px!important;
+        }
+      }
+    }
+
+  }
+
+  // ≥993
+  @media #{$large-and-up} {
+
+    .main{
+      &__title{
+        font-size: 32px;
+        line-height: 32px;
+      }
+      &__slogan{
+        font-size: 75px;
+      }
+    }
+
+    .about{
+      &__wrap{
+        padding: 50px 40px 15px 20px;
+      }
+      &__title{
+        font-size: 34px;
+      }
+      &__info{
+        margin-top: 35px;
+        &--title{
+          font-size: 26px;
+        }
+      }
+      &__text{
+        margin-top: 20px;
+      }
+      &__btn{
+        margin: 32px 0;
+      }
+    }
+
+    .offer{
+      &__title{
+        margin-top: 130px;
+        font-size: 40px;
+      }
+      &__bg{
+        padding: 140px 0 20px 0;
+      }
+    }
+
+    .gallery{
+      margin-top: 100px;
+      &__img{
+        &:hover{
+          margin-top: -40px;
+        }
+        &.active{
+          &:hover{
+            margin-top: 0;
+          }
+        }
+      }
+    }
+
+    .listings{
+      padding: 130px 0 120px 0;
+      &__title{
+        font-size: 34px;
+      }
+      &__text{
+        margin-top: 35px;
+      }
+      &__slides{
+        margin-top: 70px;
+      }
+    }
+
+    .signup{
+      padding: 130px 0 100px 0;
+    }
+
+  }
+
+  // ≥1201
+  @media #{$extra-large-and-up} {
+
+    body{
+      font-size: 20px;
+    }
+
+    .main{
+      &__title{
+        font-size: 36px;
+        line-height: 36px;
+      }
+      &__slogan{
+        font-size: 110px;
+        margin: 0;
+      }
+    }
+
+    .about{
+      &__wrap{
+        padding: 50px 80px 15px 40px;
+      }
+      &__title{
+        font-size: 40px;
+      }
+      &__info{
+        margin-top: 50px;
+        &--title{
+          font-size: 30px;
+        }
+      }
+      &__text{
+        margin-top: 30px;
+      }
+      &__btn{
+        margin: 35px 0;
+      }
+      &__slides{
+        margin-bottom: -90px;
+
+        .owl-prev{
+          left: -50px;
+        }
+
+        .owl-next{
+          right: -50px;
+        }
+
+      }
+    }
+
+    .modal{
+      font-size: 17px;
+      &__img{
+        &--left{
+          float: left;
+        }
+      }
+    }
+
+    .offer{
+      &__title{
+        margin-top: 150px;
+        font-size: 52px;
+      }
+      &__text{
+        margin-top: 30px;
+      }
+      &__bg{
+        padding: 180px 0 40px 0;
+      }
+    }
+
+    .offer-info{
+      &__title{
+        font-size: 30px;
+      }
+      &__text{
+        font-size: 17px;
+        margin-top: 30px;
+      }
+      &__btn{
+        margin: 30px 0 100px 0;
+      }
+    }
+
+    .gallery{
+      margin-top: 140px;
+    }
+
+    .services{
+      padding: 90px 0 50px 0;
+    }
+
+    .listings{
+      padding: 150px 0 140px 0;
+      &__title{
+        font-size: 40px;
+      }
+      &__text{
+        margin-top: 35px;
+      }
+      &__slides{
+        margin-top: 70px;
+        .owl-prev{
+          left: -25px;
+        }
+        .owl-next{
+          right: -25px;
+        }
+      }
+    }
+
+    .blog{
+      &__title{
+        font-size: 40px;
+        margin-top: 140px;
+      }
+      &__btn{
+        margin: 40px 0 140px 0;
+      }
+    }
+
+    .footer-logo{
+      &__inner{
+        height: 150px;
+      }
+    }
+
+    .footer{
+      padding: 100px 0 150px 0;
+      &__phone{
+        font-size: 35px;
+      }
+    }
+
+  }
+
+
+
+/*==========  Desktop First  ==========*/
+
+  // ≤600px
+  @media #{$small-and-down} {
+
+  }
+
+  // ≤992px
+  @media #{$medium-and-down} {
+
+  }
+
+  // ≥601px - ≤992px
+  @media #{$medium-only} {
+
+  }
+
+  // ≤1200px
+  @media #{$large-and-up} {
+
+  }
+
+  // ≥1201px
+  @media #{$extra-large-and-up} {
+
+  }

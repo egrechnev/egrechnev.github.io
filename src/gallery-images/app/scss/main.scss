@@ -1,0 +1,63 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	font-family: $default-font;
+	overflow-x: hidden;
+	color: $text;
+}
+
+.container{
+	max-width: 860px;
+	margin: 0 auto;
+}
+
+.load-img{
+	font-size: 14px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	&__title{
+		font-size: 16px;
+		margin: 20px 10px 0 10px;
+	}
+	&__url{
+		margin: 10px;
+		width: calc(100% - 182px);
+    	border: 1px solid $url-border;
+    	padding: 10px 10px;
+    	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+		&:focus {
+			border-color: $focus-border;
+			outline: 0;
+			box-shadow: 0 0 5px 2px $focus-shadow;
+		}
+	}
+	&__btn{
+		border: none;
+		color: $light;
+		padding: 11px 10px;
+		width: 130px;
+		text-transform: uppercase;
+		background-color: $accent;
+		letter-spacing: 1px;
+		cursor: pointer;
+		outline: 0;
+		transition: background-color .2s;
+		&:active{
+			background-color: darken($accent, 7%);
+		}
+	}
+	&__error{
+		color: $error;
+		margin: 0 10px;
+	}
+}
+
+
+@import "media"; // Always at the end
