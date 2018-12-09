@@ -68,10 +68,10 @@
       &__text{
         font-size: 17px;
       }
-      &__form{
-        &--email{
-          font-size: 17px!important;
-        }
+    }
+    .form-signup{
+      &__email{
+        font-size: 17px!important;
       }
     }
 
@@ -99,9 +99,9 @@
       }
       &__info{
         margin-top: 35px;
-        &--title{
-          font-size: 26px;
-        }
+      }
+      &__subtitle{
+        font-size: 26px;
       }
       &__text{
         margin-top: 20px;
@@ -181,9 +181,9 @@
       }
       &__info{
         margin-top: 50px;
-        &--title{
-          font-size: 30px;
-        }
+      }
+      &__subtitle{
+        font-size: 30px;
       }
       &__text{
         margin-top: 30px;
@@ -208,9 +208,7 @@
     .modal{
       font-size: 17px;
       &__img{
-        &--left{
-          float: left;
-        }
+        float: left;
       }
     }
 
