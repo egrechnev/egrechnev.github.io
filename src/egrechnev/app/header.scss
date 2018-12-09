@@ -14,7 +14,7 @@
 	top: 0;
 	z-index: 1000;
 	.row {
-		min-height: 62px; // min-height: 60px;
+		height: 62px; // height: 60px;
 	}
 	a.logo {
 		// margin-top: 8px;
@@ -28,6 +28,7 @@
 		img {
 			// width: 60px;
 			width: 45px;
+			height: 45px;
 			display: inline-block;
 			float: left;
 		}
@@ -150,6 +151,7 @@
 	// position: relative;
 	.zigzag_light {
 		width: 100px;
+		height: 25px;
 		margin: 20px auto 0;
 		svg {
 			polyline {
@@ -159,6 +161,7 @@
 	}
 	.zigzag_dark {
 		width: 100px;
+		height: 25px;
 		margin: 20px auto 0;
 		svg {
 			polyline {
@@ -259,7 +262,7 @@ Main Section
 		// transform: skewY(-2.5deg);
 	}
 	.row {
-		min-height: 78vh;
+		height: 78vh;
 		.mobile-astronaut {
 			display: none;
 		}
@@ -279,32 +282,33 @@ Main Section
 		}
 	}
 	.title {
-		margin: 0;
 		text-align: right;
 		z-index: 100;
 		display: inline-block;
 		font-size: 3em;
 		color: $text-light;
 		letter-spacing: .2vw;
-		display: inline-block; // margin-bottom: 200px;
+		// margin-bottom: 200px;
 		// transform: rotate(-3deg);
 		// font-family: "Londrina Sketch";
 		font-family: $font-title; // font-family: $header-font;
 		text-shadow: 0.05em 0.06em $header-text-shadow;
-		font-weight: 400;
 		animation-delay: .4s;
 		// span {
 		// 	animation-delay: .4s;
 		// }
-		h1 {
+		.slogan{
+			font-size: inherit;
+			font-weight: 400;
+			margin: 0;
+		}
+		.gre {
 			text-transform: uppercase;
 			font-weight: 400; // font-size: 148px;
 			font-size: 3em;
 			letter-spacing: .4vw;
 			text-shadow: 0.1em 0.03em $header-text-shadow;
 			transform: rotate(-2.8deg);
-			display: inline-block;
-			margin: 0;
 			// animation-delay: .6s;
 		}
 	}

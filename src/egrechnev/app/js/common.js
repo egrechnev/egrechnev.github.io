@@ -93,11 +93,13 @@ $("#form_contacts").submit(function() {
     data: msg.serialize()
   }).done(function() {
     // window.location.href = "#contacts";
-    	$(msg).find('.success').addClass('active').css('display', 'block').hide().fadeIn();
+    	// $(msg).find('.success').addClass('active').css('display', 'flex').hide().fadeIn();
+    	$(msg).find('.success').css('display', 'flex').hide().fadeIn();
     // alert("Сообщение отправлено!");
     setTimeout(function() {
       // Done Functions
-      $(msg).find('.success').removeClass('active').fadeOut();
+      // $(msg).find('.success').removeClass('active').fadeOut();
+      $(msg).find('.success').fadeOut();
       msg.trigger("reset");
       $(".contacts-submit").removeClass("loading");
     }, 2000);
