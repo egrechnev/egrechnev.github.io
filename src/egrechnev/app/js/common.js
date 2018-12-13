@@ -11,8 +11,8 @@ $(".s_portfolio li").click(function(){
 	$(this).addClass("active");
 });
 
-//--Popup descr
-$('.popup_content, .game').magnificPopup({
+//--Popup descr - http://dimsemenov.com/plugins/magnific-popup/
+$('.popup_content').magnificPopup({
   type:'inline',
   midClick: true,
 
@@ -35,19 +35,19 @@ $(".drawer-list a").click(function() {
   $(".click-close").click();
 });
 
-	$(".drawer-list, .menu").on("click","a", function (event) {
-		//отменяем стандартную обработку нажатия по ссылке
-		event.preventDefault();
+$(".drawer-list, .menu").on("click","a", function (event) {
+	//отменяем стандартную обработку нажатия по ссылке
+	event.preventDefault();
 
-		//забираем идентификатор бока с атрибута href
-		var id  = $(this).attr('href'),
+	//забираем идентификатор блока с атрибута href
+	var id  = $(this).attr('href'),
 
-		//узнаем высоту от начала страницы до блока на который ссылается якорь
-			top = $(id).offset().top;
+	//узнаем высоту от начала страницы до блока на который ссылается якорь
+		top = $(id).offset().top;
 
-		//анимируем переход на расстояние - top за 500 мс
-		$('body,html').animate({scrollTop: top}, 500);
-	});
+	//анимируем переход на расстояние - top за 500 мс
+	$('body,html').animate({scrollTop: top}, 500);
+});
 
 //--Headroom
 $("#header").headroom({

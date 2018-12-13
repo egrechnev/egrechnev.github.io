@@ -53,8 +53,8 @@ $(function() {
 	    }
 	});
 
-//--Navigation menu links (anchor)
-	$('.menu').on('click','.anchor', function (event) {
+//--Navigation menu links
+	$('.menu').on('click','a', function (event) {
 		event.preventDefault();
 		var id  = $(this).attr('href'),
 			top = $(id).offset().top;
@@ -69,7 +69,7 @@ $(function() {
   	});
 
 //--Fake links
-  var links = document.querySelectorAll('a[data-fake-link], input[name=submit]');
+  var links = document.querySelectorAll('a[data-fake-link], button[name=submit]');
   for(var i = 0; i < links.length; i++){
     links[i].onclick = confirmAway;
   }
