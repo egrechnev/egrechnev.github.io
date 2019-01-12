@@ -71,7 +71,6 @@
 	background: $bg-portfolio;
 	color: $text-light-portfolio;
 	position: relative;
-	min-height: 100vh;
 	&:before {
 		content: "";
 		position: absolute;
@@ -81,6 +80,9 @@
 		border-style: solid;
 		border-width: 0 100vw 10vh 0;
 		border-color: transparent transparent $bg-portfolio;
+	}
+	.portfolio-wrap{
+		min-height: calc(100vh - 160px);
 	}
 	ul {
 		margin-bottom: 35px;
@@ -383,12 +385,11 @@
 #contacts {
 	background: $bg-body-light;
 	color: $text-dark;
-	height: 100vh;
 	position: relative;
-	padding: 66px 0 30px 0;
+	padding: 60px 0;
 	z-index: 1;
-	.section_header, .section_content {
-		width: 100%;
+	.contacts-wrap{
+		min-height: calc(100vh - 163px);
 	}
 	.descr_wrap {
 		margin-bottom: 30px;

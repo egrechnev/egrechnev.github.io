@@ -88,7 +88,8 @@
 </div>
 </header>
 <div class="space-header"></div>
-<section id="main">
+<section id="main" class="d-flex flex-column">
+	<div class="main-wrap d-flex flex-column justify-content-center">
 	<div class="section_header container">
 		<div class="row align-items-center no-gutters">
 			<div class="title-wr text-center col-11 col-md-12 col-lg-10 col-xl-10">
@@ -101,6 +102,7 @@
 				</span>
 			</div>
 		</div>
+	</div>
 	</div>
 </section>
 
@@ -242,7 +244,8 @@
 	</div>
 </section>
 
-<section id="portfolio" class="s_portfolio">
+<section id="portfolio" class="s_portfolio d-flex flex-column">
+	<div class="portfolio-wrap d-flex flex-column justify-content-center">
 	<div class="section_header">
 		<h2 class="animate fadeInUp">Портфолио</h2>
 		<div class="descr_wrap">
@@ -260,8 +263,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="section_content">
-		<div class="container">
+	<div class="section_content container">
+		<!-- <div class="container"> -->
 			<div class="row">
 				<div class="col">
 					<ul>
@@ -516,59 +519,62 @@
 			</div>
 
 			</div>
-		</div>
+		<!-- </div> -->
 	</div>
+</div>
 </section>
 
-<section id="contacts" class="d-flex flex-wrap align-items-center align-content-center">
-	<div class="section_header">
-		<h2 class="animate fadeInUp">Контакты</h2>
-		<div class="descr_wrap">
-			<div class="descr">Email: <a href="mailto:egrechnev@gmail.com">egrechnev@gmail.com</a></div>
-			<div class="descr">Skype: <a href="skype:egrechnev?chat">egrechnev</a></div>
+<section id="contacts" class="d-flex flex-column">
+	<div class="contacts-wrap d-flex flex-column justify-content-center">
+		<div class="section_header">
+			<h2 class="animate fadeInUp">Контакты</h2>
+			<div class="descr_wrap">
+				<div class="descr">Email: <a href="mailto:egrechnev@gmail.com">egrechnev@gmail.com</a></div>
+				<div class="descr">Skype: <a href="skype:egrechnev?chat">egrechnev</a></div>
+			</div>
 		</div>
-	</div>
-	<div class="section_content">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="form-wr col-lg-8">
-					<div class="title-form">
-						Оставьте Ваше сообщение
-					</div>
-					<!-- novalidate -->
-					<form id="form_contacts" class="form_contacts" autocomplete="off">
-							<input type="text" name="name" style="display:none;">
-							<input type="email" name="email" required value="sfiolg@nhf.com" placeholder="Email" style="display:none;">
-						<label class="form-group">
-							<input type="email" name="e1m2a3i4l" placeholder="Email" data-validation-required-message="Не корректно введен Email" required />
-							<span class="help-block text-danger"></span>
-						</label>
-						<label class="form-group">
-							<input type="text" name="n1a2m3e" placeholder="Тема" data-validation-required-message="Вы не ввели тему письма" required />
-							<span class="help-block text-danger"></span>
-						</label>
-						<label class="form-group">
-							<textarea name="comment" rows="3" placeholder="Сообщение" data-validation-required-message="Вы не ввели сообщение" required></textarea>
-							<span class="help-block text-danger"></span>
-						</label>
-
-						<input onclick="document.getElementById('adsfxgsv').value = 'qwigu3802323hkbfak23';" type="submit" name="submit" class="contacts-submit" value="Отправить" />
-
-						<!-- <button onclick="document.getElementById('adsfxgsv').value = 'qwigu3802323hkbfak23';" name="submit" class="contacts-submit">Отправить</button> -->
-
-<!-- 						<div class="button-wr button-wr-one">
-							<button onclick="document.getElementById('adsfxgsv').value = 'qwigu3802323hkbfak23';" name="submit" class="contacts-submit">
-								Отправить
-								<div class="fill-one"></div>
-							</button>
-						</div> -->
-
-						<input id="adsfxgsv" name="adsfxgsv" value="" style="display:none;" />
-
-						<div class="success">
-							<h2>Сообщение отправлено!</h2>
+		<div class="section_content">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="form-wr col-lg-8">
+						<div class="title-form">
+							Оставьте Ваше сообщение
 						</div>
-					</form>
+						<!-- novalidate -->
+						<form id="form_contacts" class="form_contacts" autocomplete="off">
+								<input type="text" name="name" style="display:none;">
+								<input type="email" name="email" required value="sfiolg@nhf.com" placeholder="Email" style="display:none;">
+							<label class="form-group">
+								<input type="email" name="e1m2a3i4l" placeholder="Email" data-validation-required-message="Не корректно введен Email" required />
+								<span class="help-block text-danger"></span>
+							</label>
+							<label class="form-group">
+								<input type="text" name="n1a2m3e" placeholder="Тема" data-validation-required-message="Вы не ввели тему письма" required />
+								<span class="help-block text-danger"></span>
+							</label>
+							<label class="form-group">
+								<textarea name="comment" rows="3" placeholder="Сообщение" data-validation-required-message="Вы не ввели сообщение" required></textarea>
+								<span class="help-block text-danger"></span>
+							</label>
+
+							<input onclick="document.getElementById('adsfxgsv').value = 'qwigu3802323hkbfak23';" type="submit" name="submit" class="contacts-submit" value="Отправить" />
+
+							<!-- <button onclick="document.getElementById('adsfxgsv').value = 'qwigu3802323hkbfak23';" name="submit" class="contacts-submit">Отправить</button> -->
+
+	<!-- 						<div class="button-wr button-wr-one">
+								<button onclick="document.getElementById('adsfxgsv').value = 'qwigu3802323hkbfak23';" name="submit" class="contacts-submit">
+									Отправить
+									<div class="fill-one"></div>
+								</button>
+							</div> -->
+
+							<input id="adsfxgsv" name="adsfxgsv" value="" style="display:none;" />
+
+							<div class="success">
+								<h2>Сообщение отправлено!</h2>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>

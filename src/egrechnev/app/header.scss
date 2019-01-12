@@ -261,8 +261,10 @@ Main Section
 		// transform-origin: left;
 		// transform: skewY(-2.5deg);
 	}
+	.main-wrap{
+		min-height: 78vh;
+	}
 	.row {
-		height: 78vh;
 		.mobile-astronaut {
 			display: none;
 		}
