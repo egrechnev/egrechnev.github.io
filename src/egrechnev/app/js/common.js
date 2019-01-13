@@ -83,7 +83,8 @@ $("#header").headroom({
 //--jqBootstrapValidation
 // $("input, select, textarea").jqBootstrapValidation();
 
-//E-mail Ajax Send
+
+//--E-mail Ajax Send - phpmailer
 $("#form_contacts").submit(function() {
   $(".contacts-submit").addClass("loading");
   var msg = $(this);
@@ -106,6 +107,43 @@ $("#form_contacts").submit(function() {
   });
   return false;
 });
+
+
+
+//--usebasin.com - START -->
+//E-mail Ajax Send - recaptcha//
+// $(".form_contacts").submit(function() {
+
+//   var captchResponse = $('#g-recaptcha-response').val();
+//   if(captchResponse.length == 0 ) {
+//     $('.robot-text').fadeIn();
+//     return false;
+
+//   } else {
+
+//   $(".contacts-submit").addClass("loading");
+//   var msg = $(this);
+//   $.ajax({
+//     type: "POST",
+//     url: "https://usebasin.com/f/2c02fde4c819",
+//     data: msg.serialize()
+//   }).done(function() {
+//       $(msg).find('.success').css('display', 'flex').hide().fadeIn();
+//       setTimeout(function() {
+//         $(msg).find('.success').fadeOut();
+//         msg.trigger("reset");
+//         $(".contacts-submit").removeClass("loading");
+//       }, 2200);
+//       $('.robot-text').fadeOut();
+//       grecaptcha.reset();
+//   });
+
+//   return false;
+// };
+
+// });
+//|--usebasin.com - END
+
 
 //--Chrome Smooth Scroll
 	// try {

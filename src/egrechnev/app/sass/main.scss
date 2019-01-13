@@ -424,6 +424,7 @@
 		margin-bottom: 30px;
 	}
 	.form_contacts {
+		position: relative;
 		.contacts-submit {
 			font-family: $font-default;
 			border: none;
@@ -490,6 +491,13 @@
 			100% {
 				-webkit-transform: rotate(360deg);
 			}
+		}
+		.robot-text{
+			color: red;
+			position: absolute;
+			bottom: -40px;
+			left: 0;
+			display: none;
 		}
 	}
 	.form-group {
