@@ -1,4 +1,0 @@
-User-agent: Yandex
-Disallow: /js
-Disallow: /css
-Disallow: /images/
